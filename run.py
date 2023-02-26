@@ -33,7 +33,6 @@ def input_name():
     '''
     name = input('Please enter your name: ')
     print('Hello ' + name + '!')
-    
     return name
 
 # Input age
@@ -68,7 +67,6 @@ def input_height():
     '''
     height = input('Please enter your height: ')
     print('You are ' + height + ' cm!')
-    
     return height
 
 # Input weight
@@ -80,7 +78,6 @@ def input_weight():
     '''
     weight = input('Please enter your weight: ')
     print('You are ' + weight + ' kg!')
-    
     return weight
 
 # Input Goals
@@ -118,4 +115,4 @@ def main():
     input_weight()
 
 
-main()  # Run the main function
+main()
