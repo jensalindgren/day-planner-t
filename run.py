@@ -82,3 +82,5 @@ def main():
     Run all the functions.
     '''
     welcome_message()
+
+main()
