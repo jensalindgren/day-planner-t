@@ -34,7 +34,7 @@ def input_name():
 # Input age
 def input_age():
     '''
-    Collect the user age. And return it.
+    collect the user age. And return it.
     '''
     age = input('Please enter your age: ')
     print('You are ' + age + ' years old!')
@@ -110,6 +110,6 @@ def main():
     height = input_height()
     weight = input_weight()
     goals = input_goals()
-    break
+
 
 main()
