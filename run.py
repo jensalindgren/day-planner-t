@@ -81,12 +81,27 @@ def input_goals():
     Collect the user goals. And return it.
     '''
     while True:
-    goals = input('Please enter your goals: ')
-    if goals == 'lose weight' or goals == 'gain weight' or goals == 'stay fit':
-        print('Your goals are ' + goals + '!')
-        break
-    
+        try:
+            goals = int(input('\nChoose your goal. '
+                  '\nPlease enter a value between 1 and 3 '
+                    'to selecet the desired goal:\n'
+                   '\n1. Lose weight.'
+                   '\n2. Maintain weight'
+                   '\n3. Gain weight\n'))
+            if goals in range(1, 4):
+                break
+            else:
+                print('Please enter a value between 1 and 3')
+        except ValueError:
+            print('Please enter a value between 1 and 3')
+    if goals == 1:
+        print('You want to lose weight.')
+    elif goals == 2:
+        print('You want to maintain your weight.')
+    elif goals == 3:
+        print('You want to gain weight.')
     return goals
+
 
 # Main function
 
@@ -95,12 +110,18 @@ def main():
     Run all the functions.
     '''
     welcome_message()
+    while True:
+        name = input_name()
+        age = input_age()
+        sex_data = input_sex()
+        height = input_height()
+        weight = input_weight()
+        goals = input_goals()
 
-    name = input_name()
-    age = input_age()
-    sex = input_sex()
-    height = input_height()
-    weight = input_weight()
-
-    goals = input_goals()
+    if unit == '1':
+        weight_kg = input_weight('kg')
+        height_cm = input_height('cm')
+    elif unit == '2':
+        weight_kg = input_weight('lb')
+        height_cm = input_height('in')
 main()
