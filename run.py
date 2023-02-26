@@ -116,4 +116,7 @@ def main():
         height = input_height()
         weight = input_weight()
         goals = input_goals()
+
+    
+        break
 main()
