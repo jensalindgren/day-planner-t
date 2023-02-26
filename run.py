@@ -14,7 +14,7 @@ def welcome_message():
 
     ''')
 
-    print('Welcome to the Day Planer!')
+    print('Welcome to the Day Planner!')
     print('This program will help you to plan your day.')
 
 
