@@ -1,4 +1,3 @@
-
 # Output welcome message
 def welcome_message():
     '''
@@ -14,11 +13,11 @@ def welcome_message():
 
     ''')
 
-    print( + 'Welcome to the Day Planer!\n')
-    print('This program will help you to plan your day. For training and macro.')
+    print('Welcome to the Day Planer!')
+    print('This program will help you to plan your day.')
 
 
-    print()
+print()
 
 
 # Inputs
