@@ -74,6 +74,20 @@ def input_weight():
     
     return weight
 
+# Input Goals
+
+def input_goals():
+    '''
+    Collect the user goals. And return it.
+    '''
+    while True:
+    goals = input('Please enter your goals: ')
+    if goals == 'lose weight' or goals == 'gain weight' or goals == 'stay fit':
+        print('Your goals are ' + goals + '!')
+        break
+    
+    return goals
+
 # Main function
 
 def main():
@@ -82,4 +96,11 @@ def main():
     '''
     welcome_message()
 
+    name = input_name()
+    age = input_age()
+    sex = input_sex()
+    height = input_height()
+    weight = input_weight()
+
+    goals = input_goals()
 main()
