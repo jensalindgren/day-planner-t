@@ -1,4 +1,3 @@
-
 # Output welcome message
 
 
@@ -113,6 +112,7 @@ def main():
     input_age()
     input_height()
     input_weight()
+    input_goals()
 
 
 main()
