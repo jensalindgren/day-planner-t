@@ -108,13 +108,14 @@ def main():
     Run all the functions.
     '''
     welcome_message()
+
         while True:
-        name = input_name()
-        age = input_age()
-        sex_data = input_sex()
-        height = input_height()
-        weight = input_weight()
-        goals = input_goals()
+            name = input_name()
+            age = input_age()
+            sex_data = input_sex()
+            height = input_height()
+            weight = input_weight()
+            goals = input_goals()
 
     if unit == '1':
         weight_kg = input_weight('kg')
@@ -122,5 +123,4 @@ def main():
     elif unit == '2':
         weight_kg = input_weight('lb')
         height_cm = input_height('in')
-
 main()
