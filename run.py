@@ -38,7 +38,6 @@ def input_age():
     '''
     age = input('Please enter your age: ')
     print('You are ' + age + ' years old!')
-    
     return age
 
 # Input sex
@@ -82,11 +81,7 @@ def input_goals():
     while True:
         try:
             goals = int(input('\nChoose your goal. '
-                  '\nPlease enter a value between 1 and 3 '
-                    'to selecet the desired goal:\n'
-                   '\n1. Lose weight.'
-                   '\n2. Maintain weight'
-                   '\n3. Gain weight\n'))
+            '\nPlease enter a value between 1 and 3 ''to selecet the desired goal:\n''\n1. Lose weight.''\n2. Maintain weight''\n3. Gain weight\n'))
             if goals in range(1, 4):
                 break
             else:
@@ -103,20 +98,18 @@ def input_goals():
 
 # Main function
 
+
 def main():
     '''
     Run all the functions.
     '''
     welcome_message()
+    name = input_name()
+    age = input_age()
+    sex = sex_data()
+    height = input_height()
+    weight = input_weight()
+    goals = input_goals()
+    break
 
-    while True:
-        name = input_name()
-        age = input_age()
-        sex_data = input_sex()
-        height = input_height()
-        weight = input_weight()
-        goals = input_goals()
-
-    
-        break
 main()
