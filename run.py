@@ -1,4 +1,6 @@
+
 # Output welcome message
+
 
 def welcome_message():
     '''
@@ -21,7 +23,10 @@ print()
 
 
 # Inputs
+
 # Input name
+
+
 def input_name():
     '''
     Collect the user name. And return it.
@@ -32,6 +37,8 @@ def input_name():
     return name
 
 # Input age
+
+
 def input_age():
     '''
     collect the user age. And return it.
@@ -41,6 +48,8 @@ def input_age():
     return age
 
 # Input sex
+
+
 def input_sex():
     '''
     Collect the user sex. And return it.
@@ -51,6 +60,7 @@ def input_sex():
     return sex
 
 # Input height
+
 
 def input_height():
     '''
@@ -63,6 +73,7 @@ def input_height():
 
 # Input weight
 
+
 def input_weight():
     '''
     Collect the user weight. And return it.
@@ -74,27 +85,24 @@ def input_weight():
 
 # Input Goals
 
+
 def input_goals():
     '''
     Collect the user goals. And return it.
     '''
     while True:
-        try:
-            goals = int(input('\nChoose your goal. '
-            '\nPlease enter a value between 1 and 3 ''to selecet the desired goal:\n''\n1. Lose weight.''\n2. Maintain weight''\n3. Gain weight\n'))
-            if goals in range(1, 4):
-                break
-            else:
-                print('Please enter a value between 1 and 3')
-        except ValueError:
-            print('Please enter a value between 1 and 3')
-    if goals == 1:
-        print('You want to lose weight.')
-    elif goals == 2:
-        print('You want to maintain your weight.')
-    elif goals == 3:
-        print('You want to gain weight.')
-    return goals
+        goals = input('Please enter your goals: ')
+        if goals == '1':
+            print('You want to lose weight!')
+            break
+        elif goals == '2':
+            print('You want to gain weight!')
+            break
+        elif goals == '3':
+            print('You want to maintain your weight!')
+            break
+        else:
+            print('Please enter a valid number 1-3!')
 
 # Main function
 
@@ -104,12 +112,10 @@ def main():
     Run all the functions.
     '''
     welcome_message()
-    name = input_name()
-    age = input_age()
-    sex = sex_data()
-    height = input_height()
-    weight = input_weight()
-    goals = input_goals()
+    input_name()
+    input_age()
+    input_height()
+    input_weight()
 
 
-main()
+main()  # Run the main function
