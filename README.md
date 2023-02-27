@@ -1,31 +1,72 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Day Planner
 
-Welcome Jens Lindgren,
+## General Info
 
-This is the Code Institute student template for deploying your third portfolio project, the Python command-line project. The last update to this file was: **August 17, 2021**
+## Table of Contents
 
-## Reminders
+- [Day Planner](#day-planner)
+  - [General Info](#general-info)
+  - [Table of Contents](#table-of-contents)
+  - [Project Goals](#project-goals)
+  - [User Stories](#user-stories)
+  - [Wireframes](#wireframes)
+    - [Flowchart](#flowchart)
+  - [General Features](#general-features)
+    - [Index Page](#index-page)
+  - [Testing](#testing)
+    - [Code validation](#code-validation)
+  - [Manual Testing](#manual-testing)
+    - [Index](#index)
+  - [Final Result](#final-result)
+  - [Deployment](#deployment)
+  - [Features Left to Implement](#features-left-to-implement)
+  - [Credits](#credits)
 
-* Your code must be placed in the `run.py` file
-* Your dependencies must be placed in the `requirements.txt` file
-* Do not edit any of the other files or your code may not deploy properly
+## Project Goals
 
-## Creating the Heroku app
+## User Stories
 
-When you create the app, you will need to add two buildpacks from the _Settings_ tab. The ordering is as follows:
+## Wireframes
 
-1. `heroku/python`
-2. `heroku/nodejs`
+### Flowchart
+![Alt text](/assets/images/planner.png?raw=true "Flowchart")
+## General Features
 
-You must then create a _Config Var_ called `PORT`. Set this to `8000`
+### Index Page
 
-If you have credentials, such as in the Love Sandwiches project, you must create another _Config Var_ called `CREDS` and paste the JSON into the value field.
+## Testing
 
-Connect your GitHub repository and deploy as normal.
+### Code validation
 
-## Constraints
+## Manual Testing
 
-The deployment terminal is set to 80 columns by 24 rows. That means that each line of text needs to be 80 characters or less otherwise it will be wrapped onto a second line.
+### Index
 
------
-Happy coding!
+## Final Result
+
+## Deployment
+
+The application has been deployed using Heroku by following these steps:
+
+Heroku was used to deploy the application.
+
+1. Create the requirements.txt file and run: pip3 freeze > requirements.txt in the console.
+2. Commit changes and push them to GitHub.
+3. Go to the Heroku's website.
+4. From the Heroku dashboard, click on "Create new app".
+5. Enter the "App name" and "Choose a region" before clicking on "Create app".
+6. Go to "Config Vars" under the "Settings" tab.
+7. Click on "Reveals Config Vars" and add the KEY: CREDS and the VALUE stored in creds.json file if needed.
+8. Add the Config Var, KEY: PORT and VALUE: 8000.
+9. Go to "Buildpacks" section and click "Add buildpack".
+10. Select "python" and click "Save changes"
+11. Add "nodejs" buildpack as well using the same process.
+12. Go to "Deployment method", under the "Deploy" tab select "GitHub" and click on "Connect to GitHub".
+13. Go to "Connect to GitHub" section and "Search" the repository to be deployed.
+14. Click "Connect" next the repository name.
+15. Choose "Automatic deploys" or "Manual deploys" to deploy your application.
+
+## Features Left to Implement
+
+## Credits
+

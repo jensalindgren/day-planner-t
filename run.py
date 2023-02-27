@@ -87,7 +87,7 @@ def input_goals():
     Collect the user goals. And return it.
     '''
     while True:
-        goals = input('Please enter your goals: ')
+        goals = input('Please enter your goals:1.Lose weight 2.Gain weight 3.Maintain weight:')
         if goals == '1':
             print('You want to lose weight!')
             break
