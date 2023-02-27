@@ -66,6 +66,8 @@ Heroku was used to deploy the application.
 14. Click "Connect" next the repository name.
 15. Choose "Automatic deploys" or "Manual deploys" to deploy your application.
 
+Here is the link to the deployed application: [Day Planner](https://day-planner.herokuapp.com/)
+
 ## Features Left to Implement
 
 ## Credits
