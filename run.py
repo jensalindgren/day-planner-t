@@ -88,7 +88,7 @@ def input_goals():
     '''
     while True:
         goals = input('Please enter your goals:' +
-                      '1. Lose weight' 
+                      '1. Lose weight'
                       '2. Gain weight'
                       '3. Maintain weight:')
         if goals == '1':
