@@ -131,7 +131,9 @@ def input_goals():
                       '1. Lose weight'
                       '2. Gain weight'
                       '3. Maintain weight:')
-        if goals == '1':
+        if input(goals) not in ['1', '2', '3']:
+            print('Please enter a valid number 1-3!')
+        elif goals == '1':
             print('You want to lose weight!')
             break
         elif goals == '2':
@@ -140,8 +142,7 @@ def input_goals():
         elif goals == '3':
             print('You want to maintain your weight!')
             break
-        else:
-            print('Please enter a valid number 1-3!')
+    return goals
 
 # Main function
 
