@@ -15,8 +15,6 @@ def welcome_message():
     ''')
 
     print('Welcome to the Day Planner!')
-    print('This program will help you to plan your day.')
-    print('It will also help you to plan your calorie intakes and workouts.')
 
 
 print()
