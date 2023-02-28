@@ -333,14 +333,17 @@ def restart_program():
     Allow the user to run the application
     once again or exit
     '''
-    run_again = input(''' Do you want to run the program again type "yes" or
-                      otherwise "no"?
-                      ''')
+    run_again = input('''
+                      Do you want to run the program again type "yes" or
+                      "no" to exit.
+                      Otherwise "menu"? for the menu. ''')
     if run_again.lower() == 'yes':
-        main()
-    else:
-        print('Thank you for using the program!')
+        input_goals()
+    elif run_again.lower() == 'no':
         exit()
+    elif run_again.lower() == 'menu':
+        print('To the menu!')
+        welcome_message()
     return run_again
 
 
