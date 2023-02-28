@@ -148,6 +148,23 @@ def input_goals():
             break
     return goals
 
+# Restart program
+
+
+def restart_program():
+    '''
+    Allow the user to run the application
+    once again or exit
+    '''
+    run_again = input(''' Do you want to run the program again?
+                      ''')
+    if run_again.lower() == 'yes':
+        main()
+    else:
+        print('Thank you for using the program!')
+        exit()
+    return run_again
+
 # Main function
 
 
@@ -155,12 +172,16 @@ def main():
     '''
     Run all the functions.
     '''
-    welcome_message()
-    input_name()
-    input_age()
-    input_height()
-    input_weight()
-    input_goals()
+    while True:
+        welcome_message()
+        input_name()
+        input_age()
+        input_height()
+        input_weight()
+        input_goals()
+        restart_program()
+        if not restart_program():
+            break
 
 
 main()
