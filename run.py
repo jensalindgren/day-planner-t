@@ -260,13 +260,6 @@ def input_goals():
                     print('Please enter a valid number 1-3!')
                     continue
 
-        elif goals == '3':
-            print('You want to maintain your weight!')
-            break
-        else:
-            print('Please enter a valid number 1-3!')
-            continue
-
 # Restart program
 
 
@@ -275,7 +268,8 @@ def restart_program():
     Allow the user to run the application
     once again or exit
     '''
-    run_again = input(''' Do you want to run the program again?
+    run_again = input(''' Do you want to run the program again type "yes" or
+                      otherwise "no"?
                       ''')
     if run_again.lower() == 'yes':
         main()
