@@ -353,14 +353,14 @@ def inst():
                   2. Intermediate
                   3. Advanced
                   ''')
-            return instructions
+            inst()
         elif instructions.lower() == 'start':
             print('Lets start!')
             input_name()
         elif instructions.lower() == 'exit':
             print('Goodbye!')
             exit()
-            continue
+
 
 # Restart program
 
