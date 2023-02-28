@@ -358,7 +358,7 @@ def inst():
             print('Lets start!')
             input_name()
         elif instructions.lower() == 'exit':
-            print('To the menu!')
+            print('Goodbye!')
             exit()
             continue
 
