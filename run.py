@@ -32,17 +32,17 @@ def input_name():
     And display error massage.
     '''
     name = input('Please enter your name: ')
-    while len(name) == 0:
-        print("invalid name")
-        name = input('Please enter your name:')
-        while True:
-            if all(char.isalpha() or char.isspace() for char in name):
-                break
-            else:
-                print("invalid name. Please enter your name in letters only")
-                break    
+    try:
+        name = str(name)
+        if len(name) == 0:
+            print('Please enter a valid name!')
+            input_name()
+    except ValueError:
+        print('Please enter a valid name!')
+        input_name()
     print('Hello ' + name + '!')
     return name
+           
 # Input age
 
 
