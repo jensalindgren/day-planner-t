@@ -26,6 +26,7 @@ print()
 
 # Input name
 
+
 def input_name():
     '''
     Collect the user name. And return it.
@@ -91,7 +92,7 @@ def input_weight():
     Collect the user weight. And return it.
     '''
     while True:
-        weight = input('Enter your height in kg: ')
+        weight = input('Enter your weight in kg: ')
         if validate_weight(weight):
             return int(weight)
         else:
