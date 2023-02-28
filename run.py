@@ -382,7 +382,6 @@ def restart_program():
         exit()
     elif run_again.lower() == 'menu':
         print('To the menu!')
-        welcome_message()
     return run_again
 
 
