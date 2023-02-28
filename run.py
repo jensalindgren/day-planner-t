@@ -329,7 +329,7 @@ def inst():
     Help the user to use the application
     '''
     while True:
-        instructions = input('''Here Are your options for the application:
+        instructions = input('''Here Are your options:
 Type "start" "info" or "exit" ''')
         if instructions.lower() == 'start':
             print('Lets start!')
@@ -483,8 +483,6 @@ def main():
         input_goals()
 
         restart_program()
-        if not restart_program:
-            break
 
 
 main()
