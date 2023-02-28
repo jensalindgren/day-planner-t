@@ -31,7 +31,7 @@ def input_name():
     Collect the user name. And return it.
     '''
     while True:
-        name = input('Please enter your name in letters: ')
+        name = input('Enter your name in letters: ')
         if validate_name(name):
             return name
         else:
@@ -45,7 +45,7 @@ def input_age():
     collect the user age. And return it.
     '''
     while True:
-        age = input('Please enter your age in numbers: ')
+        age = input('Please enter your age: ')
         if validate_age(age):
             return int(age)
         else:
@@ -61,7 +61,7 @@ def input_sex():
     Also check if the sex is valid.
     And display error massage.
     '''
-    sex = input('Please enter your sex: ')
+    sex = input('Are you a "male" or "female": ')
     while sex not in ["male", "female"]:
         print("Invalid sex")
         sex = input('Please enter your sex: ')
@@ -77,7 +77,7 @@ def input_height():
     Collect the user height. And return it.
     '''
     while True:
-        height = input('Please enter your height in cm: ')
+        height = input('Enter your height in cm: ')
         if validate_height(height):
             return int(height)
         else:
@@ -91,7 +91,7 @@ def input_weight():
     Collect the user weight. And return it.
     '''
     while True:
-        weight = input('Please enter your height in kg: ')
+        weight = input('Enter your height in kg: ')
         if validate_weight(weight):
             return int(weight)
         else:
@@ -106,7 +106,7 @@ def input_goals():
     Collect the user goals. And return it.
     '''
     while True:
-        goals = input('Please enter your goals:' +
+        goals = input('Enter your goals for the day:' +
                       '1. Lose weight with cardio'
                       '2. Gain weight with weight-training'
                       '3. Maintain weight with weight-training:')
@@ -365,6 +365,7 @@ def main():
         input_age()
         input_height()
         input_weight()
+        input_sex()
         input_goals()
         restart_program()
         if not restart_program():
