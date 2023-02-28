@@ -371,9 +371,9 @@ def restart_program():
     once again or exit
     '''
     run_again = input('''
-                      Do you want to run the program again type "yes" or
-                      "no" to exit.
-                      Otherwise "menu"? for the menu. ''')
+Do you want to run the program again type "yes" or
+"no" to exit.
+Otherwise "menu"? for the menu. ''')
     if run_again.lower() == 'yes':
         input_goals()
     elif run_again.lower() == 'no':
