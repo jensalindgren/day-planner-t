@@ -360,7 +360,7 @@ Type "start" "info" or "exit"
             return instructions
         elif instructions.lower() == 'exit':
             print('Goodbye!')
-            return instructions
+            break
 
 # Restart program
 
