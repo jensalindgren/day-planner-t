@@ -16,6 +16,7 @@ def welcome_message():
 
     print('Welcome to the Day Planner!')
     print('This program will help you to plan your day.')
+    print('It will also help you to plan your calorie intakes and workouts.')
 
 
 print()
@@ -106,9 +107,9 @@ def input_goals():
     '''
     while True:
         goals = input('Please enter your goals:' +
-                      '1. Lose weight'
-                      '2. Gain weight'
-                      '3. Maintain weight:')
+                      '1. Lose weight with cardio'
+                      '2. Gain weight with weight-training'
+                      '3. Maintain weight with weight-training:')
         if input(goals) not in ['1', '2', '3']:
             print('Please enter a valid number 1-3!')
             continue
@@ -119,17 +120,77 @@ def input_goals():
                                    '2. Intermediate'
                                    '3. Advanced')
                 if goal_level == '1':
-                    print('Beginner program and Goals!')
-                    
-                    
+                    print('Beginner training program and goals!')
                     goal_data = {
-                        'goal_level': 'Beginner',
+                        'goal': 'Beginner',
+
+                        'cardio': '30-40 minutes interval training'
+                        '5 minutes light running warmup'
+                        '3 times a 800m interval. 2 minutes rest'
+                        'between each interval.'
+                        'Afterwards 5 minutes cooldown with'
+                        '5 minutes stretching',
+
+                        'Calorie intake for the whole day': '2000 calories',
+                        'Protein intake for the whole day': '160g',
+                        'Carbohydrate intake for the whole day': '190g',
+                        'Fat intake for the whole day': '80g',
                     }
                     return goal_data
-            
+
+                elif goal_level == '2':
+                    print('Intermediate training program and goals!')
+                    goal_data = {
+                        'goal': 'Intermediate',
+
+                        'cardio': '60-70 minutes interval training'
+                        '10 minutes light running warmup'
+                        '3 times a 200m interval. 2 minutes rest'
+                        'between each interval.'
+                        'Afterwards followed by 2 times 400m interval.'
+                        '1 minute rest in between.'
+                        'Followed by 2 times 800m interval. 2 minutes rest.'
+                        'Afterwards 5 minutes cooldown with'
+                        '5 minutes stretching',
+
+                        'Calorie intake for the whole day': '1800 calories',
+                        'Protein intake for the whole day': '180g',
+                        'Carbohydrate intake for the whole day': '170g',
+                        'Fat intake for the whole day': '60g',
+                    }
+                    return goal_data
+                
+                elif goal_level == '3':
+                    print('Advanced training program and goals!')
+                    goal_data = {
+                        'goal': 'Advanced',
+
+                        'cardio': '60-70 minutes interval training'
+                        '10 minutes light running warmup'
+                        '3 times a 400m interval. 2 minutes rest'
+                        'between each interval.'
+                        'Afterwards followed by 2 times 800m interval.'
+                        '1 minute rest in between.'
+                        'Followed by 4 times 200m interval. 2 minutes rest.'
+                        'Afterwards 5 minutes cooldown with'
+                        '5 minutes stretching',
+
+                        'Calorie intake for the whole day': '1600 calories',
+                        'Protein intake for the whole day': '200g',
+                        'Carbohydrate intake for the whole day': '150g',
+                        'Fat intake for the whole day': '40g',
+                    }
+                    return goal_data
+                
+                else :
+                    print('Please enter a valid number 1-3!')
+                    continue
+
         elif goals == '2':
-            print('You want to gain weight!')
+            print('You want to gain weight-training!')
             break
+        
+        
         elif goals == '3':
             print('You want to maintain your weight!')
             break
