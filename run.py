@@ -35,6 +35,11 @@ def input_name():
     while len(name) == 0:
         print("invalid name")
         name = input('Please enter your name:')
+        while True:
+            if all(char.isalpha() or char.isspace() for char in name):
+                break
+            else:
+                print("invalid name. Please enter your name in letters only")
     print('Hello ' + name + '!')
     return name
 # Input age
