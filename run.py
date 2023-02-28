@@ -329,9 +329,9 @@ def inst():
     Help the user to use the application
     '''
     while True:
-        instructions = input('''Do you need instructions?
-                             Type "yes" or "no" ''')
-        if instructions.lower() == 'yes':
+        instructions = input('''Here Are your options for the application:
+                             Type "start" "info" or "exit" ''')
+        if instructions.lower() == 'info':
             print('''
                   Welcome to the fitness application!
                   This application will help you to
@@ -354,9 +354,12 @@ def inst():
                   3. Advanced
                   ''')
             return instructions
-        elif instructions.lower() == 'no':
+        elif instructions.lower() == 'start':
+            print('Lets start!')
+            input_name()
+        elif instructions.lower() == 'exit':
             print('To the menu!')
-            welcome_message()
+            exit()
             continue
 
 # Restart program
