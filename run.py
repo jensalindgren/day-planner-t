@@ -32,7 +32,7 @@ def input_name():
     And display error massage.
     '''
     name = input('Please enter your name: ')
-    while len(name) == 0 :
+    while len(name) == 0:
         print("invalid name")
         name = input('Please enter your name:')
     print('Hello ' + name + '!')
@@ -51,10 +51,10 @@ def input_age():
         age = int(age)
         if age < 0 or age > 120:
             print('Please enter a valid age!')
-            input_age()
+            return input_age()
     except ValueError:
         print('Please enter a valid age!')
-        input_age()
+        return input_age()
     print('You are ' + age + ' years old!')
     return age
 
