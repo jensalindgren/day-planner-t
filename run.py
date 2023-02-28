@@ -333,7 +333,6 @@ def inst():
 Type "start" "info" or "exit" ''')
         if instructions.lower() == 'start':
             print('Lets start!')
-            input_name()
             return instructions
         elif instructions.lower() == 'info':
             print('''
@@ -486,9 +485,6 @@ def main():
         input_goals()
 
         restart_program()
-
-        if not restart_program():
-            break
 
 
 main()
