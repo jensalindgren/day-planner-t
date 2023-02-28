@@ -40,6 +40,7 @@ def input_name():
                 break
             else:
                 print("invalid name. Please enter your name in letters only")
+                break    
     print('Hello ' + name + '!')
     return name
 # Input age
