@@ -21,7 +21,7 @@ def welcome_message():
 print()
 
 
-# Inputs
+# Inputs for all the data
 
 # Input name
 
@@ -30,7 +30,7 @@ def input_name():
     Collect the user name. And return it.
     '''
     while True:
-        name = input('Please enter your name: ')
+        name = input('Please enter your name in letters: ')
         if validate_name(name):
             return name
         else:
@@ -44,7 +44,7 @@ def input_age():
     collect the user age. And return it.
     '''
     while True:
-        age = input('Please enter your age: ')
+        age = input('Please enter your age in numbers: ')
         if validate_age(age):
             return int(age)
         else:
@@ -74,20 +74,13 @@ def input_sex():
 def input_height():
     '''
     Collect the user height. And return it.
-    Also check if the height is valid.
-    And display error massage.
     '''
-    height = input('Please enter your height: ')
-    try:
-        height = int(height)
-        if height < 130 or height > 230:
-            print('Please enter a valid height!')
-            input_height()
-    except ValueError:
-        print('Please enter a valid height!')
-        input_height()
-    print('You are ' + height + ' cm!')
-    return height
+    while True:
+        height = input('Please enter your height in cm: ')
+        if validate_height(height):
+            return int(height)
+        else:
+            continue
 
 # Input weight
 
@@ -95,20 +88,13 @@ def input_height():
 def input_weight():
     '''
     Collect the user weight. And return it.
-    Also check if the weight is valid.
-    And display error massage.
     '''
-    weight = input('Please enter your weight: ')
-    try:
-        weight = int(weight)
-        if weight < 40 or weight > 200:
-            print('Please enter a valid weight')
-            input_weight()
-    except ValueError:
-        print('Please enter a valid weight')
-        input_weight()
-    print('You are ' + weight + ' kg!')
-    return weight
+    while True:
+        weight = input('Please enter your height in kg: ')
+        if validate_weight(weight):
+            return int(weight)
+        else:
+            continue
 
 
 # Input Goals
@@ -153,6 +139,9 @@ def restart_program():
         exit()
     return run_again
 
+
+# Validation for the inputs
+
 # Validate name
 
 
@@ -167,7 +156,7 @@ def validate_name(name):
     except ValueError:
         print('Please enter a valid name!')
         return False
-    
+
     return True
 
 
@@ -188,6 +177,41 @@ def validate_age(age):
         return False
     return True
 
+# Validate height
+
+
+def validate_height(height):
+    '''
+    Checks if the height is valid.
+    And display error massage.
+    '''
+    try:
+        height = int(height)
+        if height < 100 or height > 250:
+            raise ValueError('Please enter a valid' +
+                             'height between 100cm and 250cm!')
+    except ValueError:
+        print('Please enter a valid height between 100cm and 250cm!')
+        return False
+    return True
+
+# Validate weight
+
+
+def validate_weight(weight):
+    '''
+    Checks if the weight is valid.
+    And display error massage.
+    '''
+    try:
+        weight = int(weight)
+        if weight < 40 or weight > 200:
+            raise ValueError('Please enter a valid' +
+                             'weight between 40kg and 200kg!')
+    except ValueError:
+        print('Please enter a valid weight between 40kg and 200kg!')
+        return False
+    return True
 
 # Main function
 
