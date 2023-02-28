@@ -30,6 +30,7 @@ def input_name():
     '''
     Collect the user name. And return it.
     Also check if the name is valid.
+    And display error massage.
     '''
     name = input('Please enter your name: ')
     while len(name) == 0:
@@ -45,6 +46,7 @@ def input_age():
     '''
     collect the user age. And return it.
     Also check if the age is valid.
+    And display error massage.
     '''
     age = input('Please enter your age: ')
     try:
@@ -65,6 +67,7 @@ def input_sex():
     '''
     Collect the user sex. And return it.
     Also check if the sex is valid.
+    And display error massage.
     '''
     sex = input('Please enter your sex: ')
     while sex not in ["male", "female"]:
@@ -80,6 +83,8 @@ def input_sex():
 def input_height():
     '''
     Collect the user height. And return it.
+    Also check if the height is valid.
+    And display error massage.
     '''
     height = input('Please enter your height: ')
     try:
@@ -99,6 +104,8 @@ def input_height():
 def input_weight():
     '''
     Collect the user weight. And return it.
+    Also check if the weight is valid.
+    And display error massage.
     '''
     weight = input('Please enter your weight: ')
     try:
