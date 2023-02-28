@@ -22,8 +22,6 @@ def welcome_message():
 print()
 
 
-# Inputs for all the data
-
 # Input name
 
 
@@ -106,15 +104,15 @@ def input_goals():
     '''
     while True:
         goals = input('Enter your goals for the day:' +
-                      '1. Lose weight with cardio'
-                      '2. Gain weight with weight-training'
-                      '3. Maintain weight with weight-training:')
+                      ' 1. Lose weight with cardio'
+                      ' 2. Gain weight with weight-training'
+                      ' 3. Maintain weight with weight-training:')
         if goals == '1':
             while True:
                 goal_level = input('Please enter your goal level:' +
-                                   '1. Beginner'
-                                   '2. Intermediate'
-                                   '3. Advanced')
+                                   ' 1. Beginner'
+                                   ' 2. Intermediate'
+                                   ' 3. Advanced')
                 if goal_level == '1':
                     print('Beginner training program and goals!')
                     goal_data = {
@@ -185,9 +183,9 @@ def input_goals():
             print('You want to gain weight-training!')
             while True:
                 goal_level = input('Please enter your goal level:' +
-                                   '1. Beginner'
-                                   '2. Intermediate'
-                                   '3. Advanced')
+                                   ' 1. Beginner'
+                                   ' 2. Intermediate'
+                                   ' 3. Advanced')
                 if goal_level == '1':
                     print('Beginner training program and goals!')
                     goal_data = {
@@ -258,9 +256,9 @@ def input_goals():
             print('You want to maintain your weight-training!')
             while True:
                 goal_level = input('Please enter your goal level:' +
-                                   '1. Beginner'
-                                   '2. Intermediate'
-                                   '3. Advanced')
+                                   ' 1. Beginner'
+                                   ' 2. Intermediate'
+                                   ' 3. Advanced')
                 if goal_level == '1':
                     print('Beginner training program and goals!')
                     goal_data = {
@@ -321,6 +319,44 @@ def input_goals():
                     return goal_data
         else:
             print('Please enter a valid number!')
+            continue
+
+# Instructions
+
+
+def inst():
+    '''
+    Help the user to use the application
+    '''
+    while True:
+        instructions = input('''Do you need instructions?
+                             Type "yes" or "no" ''')
+        if instructions.lower() == 'yes':
+            print('''
+                  Welcome to the fitness application!
+                  This application will help you to
+                  create a training program and
+                  a meal plan based on your goals.
+                  You will be asked to enter your
+                  name, age, weight, height and
+                  your goals.
+                  The application will then create
+                  a training program and a meal plan
+                  for you.
+
+                  You can choose between 3 different goals:
+                  1. Weight loss
+                  2. Weight gain
+                  3. Maintain weight
+                  You can also choose between 3 different levels:
+                  1. Beginner
+                  2. Intermediate
+                  3. Advanced
+                  ''')
+            return instructions
+        elif instructions.lower() == 'no':
+            print('To the menu!')
+            welcome_message()
             continue
 
 # Restart program
@@ -429,6 +465,8 @@ def main():
     '''
     while True:
         welcome_message()
+
+        inst()
 
         input_name()
 
