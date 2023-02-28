@@ -205,9 +205,9 @@ def input_goals():
                         'Afterwards 5 minutes cooldown with'
                         '5 minutes stretching',
 
-                        'Calorie intake for the whole day': '2000 calories',
+                        'Calorie intake for the whole day': '2800 calories',
                         'Protein intake for the whole day': '160g',
-                        'Carbohydrate intake for the whole day': '190g',
+                        'Carbohydrate intake for the whole day': '250g',
                         'Fat intake for the whole day': '80g',
                     }
                     return goal_data
@@ -227,10 +227,10 @@ def input_goals():
                         'Afterwards 5 minutes cooldown with'
                         '5 minutes stretching',
 
-                        'Calorie intake for the whole day': '1800 calories',
+                        'Calorie intake for the whole day': '3200 calories',
                         'Protein intake for the whole day': '180g',
-                        'Carbohydrate intake for the whole day': '170g',
-                        'Fat intake for the whole day': '60g',
+                        'Carbohydrate intake for the whole day': '320g',
+                        'Fat intake for the whole day': '100g',
                     }
                     return goal_data
 
@@ -249,10 +249,10 @@ def input_goals():
                         'Afterwards 5 minutes cooldown with'
                         '5 minutes stretching',
 
-                        'Calorie intake for the whole day': '1600 calories',
+                        'Calorie intake for the whole day': '3500 calories',
                         'Protein intake for the whole day': '200g',
-                        'Carbohydrate intake for the whole day': '150g',
-                        'Fat intake for the whole day': '40g',
+                        'Carbohydrate intake for the whole day': '350g',
+                        'Fat intake for the whole day': '120g',
                     }
                     return goal_data
 
