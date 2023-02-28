@@ -111,16 +111,29 @@ def input_goals():
                       '3. Maintain weight:')
         if input(goals) not in ['1', '2', '3']:
             print('Please enter a valid number 1-3!')
-        elif goals == '1':
-            print('You want to lose weight!')
-            break
+            continue
+        if goals == '1':
+            while True:
+                goal_level = input('Please enter your goal level:' +
+                                   '1. Beginner'
+                                   '2. Intermediate'
+                                   '3. Advanced')
+                if goal_level == '1':
+                    print('Beginner program and Goals!')
+                    
+                    
+                    goal_data = {
+                        'goal_level': 'Beginner',
+                    }
+                    return goal_data
+            
         elif goals == '2':
             print('You want to gain weight!')
             break
         elif goals == '3':
             print('You want to maintain your weight!')
             break
-    return goals
+        continue
 
 # Restart program
 
