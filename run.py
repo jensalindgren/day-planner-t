@@ -66,8 +66,6 @@ def input_sex():
     while sex not in ["male", "female"]:
         print("Invalid sex")
         sex = input('Please enter your sex: ')
-    print('You are ' + sex + '!')
-
     return sex
 
 # Input height
@@ -340,14 +338,13 @@ def restart_program():
     if run_again.lower() == 'yes':
         input_goals()
     elif run_again.lower() == 'no':
+        print('Goodbye!')
         exit()
     elif run_again.lower() == 'menu':
         print('To the menu!')
         welcome_message()
     return run_again
 
-
-# Validation for the inputs
 
 # Validate name
 
