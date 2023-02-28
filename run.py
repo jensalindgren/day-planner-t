@@ -330,8 +330,12 @@ def inst():
     '''
     while True:
         instructions = input('''Here Are your options for the application:
-                             Type "start" "info" or "exit" ''')
-        if instructions.lower() == 'info':
+Type "start" "info" or "exit" ''')
+        if instructions.lower() == 'start':
+            print('Lets start!')
+            input_name()
+            return instructions
+        elif instructions.lower() == 'info':
             print('''
                   Welcome to the fitness application!
                   This application will help you to
@@ -354,13 +358,11 @@ def inst():
                   3. Advanced
                   ''')
             inst()
-        elif instructions.lower() == 'start':
-            print('Lets start!')
-            input_name()
+            return instructions
         elif instructions.lower() == 'exit':
             print('Goodbye!')
-            exit()
-
+            welcome_message()
+            return instructions
 
 # Restart program
 
