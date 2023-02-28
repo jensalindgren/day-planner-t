@@ -329,8 +329,10 @@ def inst():
     Help the user to use the application
     '''
     while True:
-        instructions = input('''Here Are your options:
-Type "start" "info" or "exit" ''')
+        instructions = input('''
+Here Are your options:
+Type "start" "info" or "exit" 
+''')
         if instructions.lower() == 'start':
             print('Lets start!')
             return instructions
