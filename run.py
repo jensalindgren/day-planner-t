@@ -28,20 +28,13 @@ print()
 def input_name():
     '''
     Collect the user name. And return it.
-    Also check if the name is valid.
-    And display error massage.
     '''
-    name = input('Please enter your name: ')
-    try:
-        name = str(name)
-        if len(name) == 0:
-            print('Please enter a valid name!')
-            input_name()
-    except ValueError:
-        print('Please enter a valid name!')
-        input_name()
-    print('Hello ' + name + '!')
-    return name
+    while True:
+        name = input('Please enter your name: ')
+        if validate_name(name):
+            return name
+        else:
+            continue
 
 # Input age
 
@@ -49,8 +42,6 @@ def input_name():
 def input_age():
     '''
     collect the user age. And return it.
-    Also check if the age is valid.
-    And display error massage.
     '''
     while True:
         age = input('Please enter your age: ')
@@ -162,10 +153,32 @@ def restart_program():
         exit()
     return run_again
 
+# Validate name
+
+
+def validate_name(name):
+    '''
+    Checks if the name is valid.
+    And display error massage.
+    '''
+    try:
+        if len(name) == 0:
+            raise ValueError('Please enter a valid name!')
+    except ValueError:
+        print('Please enter a valid name!')
+        return False
+    
+    return True
+
+
 # Validate age
 
 
 def validate_age(age):
+    '''
+    Checks if the age valid.
+    And display error massage.
+    '''
     try:
         age = int(age)
         if age < 0 or age > 120:
