@@ -30,13 +30,16 @@ def input_name():
     '''
     Collect the user name. And return it.
     Also check if the name is valid.
-    And display error massage.
+    And display error message.
     '''
-    name = input('Please enter your name: ')
-    while len(name) == 0:
-        print("invalid name")
-        name = input('Please enter your name:')
-    print('Hello ' + name + '!')
+    while True:
+        name = input('Please enter your name: ')
+        if all(char.isalpha() or char.isspace() for char in name):
+            break
+        else:
+            print('Invalid name.' +
+                  'Please enter a name that contains only letters.')
+    print('Hello, ' + name + '!')
     return name
 
 # Input age
