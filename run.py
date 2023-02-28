@@ -110,9 +110,6 @@ def input_goals():
                       '1. Lose weight with cardio'
                       '2. Gain weight with weight-training'
                       '3. Maintain weight with weight-training:')
-        if input(goals) not in ['1', '2', '3']:
-            print('Please enter a valid number 1-3!')
-            continue
         if goals == '1':
             while True:
                 goal_level = input('Please enter your goal level:' +
@@ -159,6 +156,7 @@ def input_goals():
                         'Carbohydrate intake for the whole day': '170g',
                         'Fat intake for the whole day': '60g',
                     }
+                    print(goal_data)
                     return goal_data
 
                 elif goal_level == '3':
@@ -181,6 +179,7 @@ def input_goals():
                         'Carbohydrate intake for the whole day': '150g',
                         'Fat intake for the whole day': '40g',
                     }
+                    print(goal_data)
                     return goal_data
 
         elif goals == '2':
@@ -207,6 +206,7 @@ def input_goals():
                         'Carbohydrate intake for the whole day': '250g',
                         'Fat intake for the whole day': '80g',
                     }
+                    print(goal_data)
                     return goal_data
 
                 elif goal_level == '2':
@@ -229,6 +229,7 @@ def input_goals():
                         'Carbohydrate intake for the whole day': '320g',
                         'Fat intake for the whole day': '100g',
                     }
+                    print(goal_data)
                     return goal_data
 
                 elif goal_level == '3':
@@ -251,6 +252,7 @@ def input_goals():
                         'Carbohydrate intake for the whole day': '350g',
                         'Fat intake for the whole day': '120g',
                     }
+                    print(goal_data)
                     return goal_data
 
         elif goals == '3':
@@ -277,6 +279,7 @@ def input_goals():
                         'Carbohydrate intake for the whole day': '190g',
                         'Fat intake for the whole day': '80g',
                     }
+                    print(goal_data)
                     return goal_data
 
                 elif goal_level == '2':
@@ -299,6 +302,7 @@ def input_goals():
                         'Carbohydrate intake for the whole day': '220g',
                         'Fat intake for the whole day': '100g',
                     }
+                    print(goal_data)
                     return goal_data
 
                 elif goal_level == '3':
@@ -314,7 +318,11 @@ def input_goals():
                         '1 minute rest in between.'
                         'Followed by 4 times'
                     }
+                    print(goal_data)
                     return goal_data
+        else:
+            print('Please enter a valid number!')
+            continue
 
 # Restart program
 
