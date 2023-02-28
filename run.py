@@ -42,7 +42,7 @@ def input_name():
         input_name()
     print('Hello ' + name + '!')
     return name
-           
+
 # Input age
 
 
@@ -52,17 +52,13 @@ def input_age():
     Also check if the age is valid.
     And display error massage.
     '''
-    age = input('Please enter your age: ')
-    try:
-        age = int(age)
-        if age < 0 or age > 120:
-            print('Please enter a valid age!')
-            return input_age()
-    except ValueError:
-        print('Please enter a valid age!')
-        return input_age()
-    print('You are ' + age + ' years old!')
-    return age
+    while True:
+        age = input('Please enter your age: ')
+        if validate_age(age):
+            return int(age)
+        else:
+            continue
+
 
 # Input sex
 
@@ -123,6 +119,7 @@ def input_weight():
     print('You are ' + weight + ' kg!')
     return weight
 
+
 # Input Goals
 
 
@@ -164,6 +161,20 @@ def restart_program():
         print('Thank you for using the program!')
         exit()
     return run_again
+
+# Validate age
+
+
+def validate_age(age):
+    try:
+        age = int(age)
+        if age < 0 or age > 120:
+            raise ValueError('Please enter a valid age between 1 and 120!')
+    except ValueError:
+        print('Please enter a valid age between 1 and 120!')
+        return False
+    return True
+
 
 # Main function
 
