@@ -465,8 +465,8 @@ def main():
     '''
     Run all the functions.
     '''
+    welcome_message()
     while True:
-        welcome_message()
 
         inst()
 
