@@ -416,13 +416,21 @@ def main():
     '''
     while True:
         welcome_message()
+
         input_name()
+
         input_age()
+
         input_height()
+
         input_weight()
+
         input_sex()
+
         input_goals()
+
         restart_program()
+
         if not restart_program():
             break
 
