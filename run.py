@@ -136,6 +136,7 @@ def input_goals():
                         'Carbohydrate intake for the whole day': '190g',
                         'Fat intake for the whole day': '80g',
                     }
+                    print(goal_data)
                     return goal_data
 
                 elif goal_level == '2':
@@ -406,6 +407,9 @@ def validate_weight(weight):
         print('Please enter a valid weight between 40kg and 200kg!')
         return False
     return True
+
+# Display the results
+
 
 # Main function
 
