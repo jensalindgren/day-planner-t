@@ -303,18 +303,17 @@ def input_goals():
                 elif goal_level == '3':
                     print('Advanced training program and goals!')
                     goal_data = {'''
-                                 
+
                          goal : Advanced
 
                          cardio : 60-70 minutes interval training
                          10 minutes light running warmup
-                         3 times a 400m interval. 
+                         3 times a 400m interval.
                          2 minutes rest between each interval.
                          Afterwards followed by 2 times 800m interval.
                          1 minute rest in between.
                          Followed by 4 times 200m interval.
-                        '''
-                    }
+                         '''}
                     print(goal_data)
                     return goal_data
         else:
