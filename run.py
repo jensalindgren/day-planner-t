@@ -28,7 +28,9 @@ def input_name():
     Collect the user name. And return it.
     '''
     while True:
-        name = input('Enter your name in letters: ')
+        name = input('''
+                  Enter your name in letters:
+                     ''')
         if validate_name(name):
             return name
         else:
