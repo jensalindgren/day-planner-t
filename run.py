@@ -128,209 +128,212 @@ def input_goals():
                     print('''
                        Beginner training program and goals!
                        ''')
-                    goal_data = {
-                        'goal': 'Beginner',
+                    print('''{
+                        Goal: Beginner
 
-                        'cardio': '30-40 minutes interval training'
-                        '5 minutes light running warmup'
-                        '3 times a 800m interval. 2 minutes rest'
-                        'between each interval.'
-                        'Afterwards 5 minutes cooldown with'
-                        '5 minutes stretching',
+                        Cardio: 30-40 minutes interval training
+                        5 minutes light running warmup
+                        3 times a 800m interval.
+                        2 minutes rest between each interval.
+                        Afterwards 5 minutes cooldown with
+                        5 minutes stretching.
 
-                        'Calorie intake for the whole day': '2000 calories',
-                        'Protein intake for the whole day': '160g',
-                        'Carbohydrate intake for the whole day': '190g',
-                        'Fat intake for the whole day': '80g',
-                    }
-                    print(goal_data)
-                    return goal_data
+                        Calorie intake for the whole day: 2000 calories
+                        Protein intake for the whole day: 160g
+                        Carbohydrate intake for the whole day: 190g
+                        Fat intake for the whole day: 80g
+                        ''')
+                    restart_program()
 
                 elif goal_level == '2':
-                    print('Intermediate training program and goals!')
-                    goal_data = {
-                        'goal': 'Intermediate',
+                    print('''
+                       Intermediate training program and goals!
+                       ''')
+                    print('''
+                        Goal: Intermediate
 
-                        'cardio': '60-70 minutes interval training'
-                        '10 minutes light running warmup'
-                        '3 times a 200m interval. 2 minutes rest'
-                        'between each interval.'
-                        'Afterwards followed by 2 times 400m interval.'
-                        '1 minute rest in between.'
-                        'Followed by 2 times 800m interval. 2 minutes rest.'
-                        'Afterwards 5 minutes cooldown with'
-                        '5 minutes stretching',
+                        Cardio: 60-70 minutes interval training
+                        10 minutes light running warmup
+                        3 times a 200m interval.
+                        2 minutes rest between each interval.
+                        Afterwards followed by 2 times 400m interval.
+                        1 minute rest in between.
+                        Followed by 2 times 800m interval. 2 minutes rest.
+                        Afterwards 5 minutes cooldown with
+                        5 minutes stretching.
 
-                        'Calorie intake for the whole day': '1800 calories',
-                        'Protein intake for the whole day': '180g',
-                        'Carbohydrate intake for the whole day': '170g',
-                        'Fat intake for the whole day': '60g',
-                    }
-                    print(goal_data)
-                    return goal_data
+                        Calorie intake for the whole day: 1800 calories
+                        Protein intake for the whole day: 180g
+                        Carbohydrate intake for the whole day: 170g
+                        Fat intake for the whole day: 60g
+                        ''')
+                    restart_program()
 
                 elif goal_level == '3':
-                    print('Advanced training program and goals!')
-                    goal_data = {
-                        'goal': 'Advanced',
+                    print('''
+                        Advanced training program and goals!''')
+                    print('''
+                        Goal: Advanced
 
-                        'cardio': '60-70 minutes interval training'
-                        '10 minutes light running warmup'
-                        '3 times a 400m interval. 2 minutes rest'
-                        'between each interval.'
-                        'Afterwards followed by 2 times 800m interval.'
-                        '1 minute rest in between.'
-                        'Followed by 4 times 200m interval. 2 minutes rest.'
-                        'Afterwards 5 minutes cooldown with'
-                        '5 minutes stretching',
+                        Cardio: 60-70 minutes interval training
+                        10 minutes light running warmup
+                        3 times a 400m interval.
+                        2 minutes rest between each interval.
+                        Afterwards followed by 2 times 800m interval.
+                        1 minute rest in between.
+                        Followed by 4 times 200m interval. 2 minutes rest.
+                        Afterwards 5 minutes cooldown with
+                        5 minutes stretching.
 
-                        'Calorie intake for the whole day': '1600 calories',
-                        'Protein intake for the whole day': '200g',
-                        'Carbohydrate intake for the whole day': '150g',
-                        'Fat intake for the whole day': '40g',
-                    }
-                    print(goal_data)
-                    return goal_data
+                        Calorie intake for the whole day: 1600 calories
+                        Protein intake for the whole day: 200g
+                        Carbohydrate intake for the whole day: 150g
+                        Fat intake for the whole day: 40g
+                        ''')
+                    restart_program()
 
         elif goals == '2':
-            print('You want to gain weight-training!')
+            print('''
+                        You want to gain weight-training!''')
             while True:
-                goal_level = input('Please enter your goal level:' +
-                                   ' 1. Beginner'
-                                   ' 2. Intermediate'
-                                   ' 3. Advanced')
+                goal_level = input('''
+                       Please enter your goal level:
+                       1. Beginner
+                       2. Intermediate
+                       3. Advanced
+                       ''')
                 if goal_level == '1':
-                    print('Beginner training program and goals!')
-                    goal_data = {
-                        'goal': 'Beginner',
+                    print('''
+                          Beginner training program and goals!''')
+                    print('''
+                        Goal: Beginner
 
-                        'cardio': '30-40 minutes interval training'
-                        '5 minutes light running warmup'
-                        '3 times a 800m interval. 2 minutes rest'
-                        'between each interval.'
-                        'Afterwards 5 minutes cooldown with'
-                        '5 minutes stretching',
+                        Cardio: 30-40 minutes interval training
+                        5 minutes light running warmup
+                        3 times a 800m interval.
+                        2 minutes rest between each interval.
+                        Afterwards 5 minutes cooldown with
+                        5 minutes stretching.
 
-                        'Calorie intake for the whole day': '2800 calories',
-                        'Protein intake for the whole day': '160g',
-                        'Carbohydrate intake for the whole day': '250g',
-                        'Fat intake for the whole day': '80g',
-                    }
-                    print(goal_data)
-                    return goal_data
+                        Calorie intake for the whole day: 2800 calories
+                        Protein intake for the whole day: 160g
+                        Carbohydrate intake for the whole day: 250g
+                        Fat intake for the whole day: 80g
+                        ''')
+                    restart_program()
 
                 elif goal_level == '2':
-                    print('Intermediate training program and goals!')
-                    goal_data = {
-                        'goal': 'Intermediate',
+                    print('''
+                        Intermediate training program and goals!''')
+                    print('''
+                        Goal: Intermediate
 
-                        'cardio': '60-70 minutes interval training'
-                        '10 minutes light running warmup'
-                        '3 times a 200m interval. 2 minutes rest'
-                        'between each interval.'
-                        'Afterwards followed by 2 times 400m interval.'
-                        '1 minute rest in between.'
-                        'Followed by 2 times 800m interval. 2 minutes rest.'
-                        'Afterwards 5 minutes cooldown with'
-                        '5 minutes stretching',
+                        Cardio: 60-70 minutes interval training
+                        10 minutes light running warmup
+                        3 times a 200m interval.
+                        2 minutes rest between each interval.
+                        Afterwards followed by 2 times 400m interval.
+                        1 minute rest in between.
+                        Followed by 2 times 800m interval. 2 minutes rest.
+                        Afterwards 5 minutes cooldown with
+                        5 minutes stretching.
 
-                        'Calorie intake for the whole day': '3200 calories',
-                        'Protein intake for the whole day': '180g',
-                        'Carbohydrate intake for the whole day': '320g',
-                        'Fat intake for the whole day': '100g',
-                    }
-                    print(goal_data)
-                    return goal_data
+                        Calorie intake for the whole day: 3200 calories
+                        Protein intake for the whole day: 180g
+                        Carbohydrate intake for the whole day: 320g
+                        Fat intake for the whole day: 100g
+                        ''')
+                    restart_program()
 
                 elif goal_level == '3':
-                    print('Advanced training program and goals!')
-                    goal_data = {
-                        'goal': 'Advanced',
+                    print('''
+                        Advanced training program and goals!''')
+                    print('''
+                        Goal': Advanced
 
-                        'cardio': '60-70 minutes interval training'
-                        '10 minutes light running warmup'
-                        '3 times a 400m interval. 2 minutes rest'
-                        'between each interval.'
-                        'Afterwards followed by 2 times 800m interval.'
-                        '1 minute rest in between.'
-                        'Followed by 4 times 200m interval. 2 minutes rest.'
-                        'Afterwards 5 minutes cooldown with'
-                        '5 minutes stretching',
+                        Cardio: 60-70 minutes interval training
+                        10 minutes light running warmup
+                        3 times a 400m interval.
+                        2 minutes rest between each interval.
+                        Afterwards followed by 2 times 800m interval.
+                        1 minute rest in between.
+                        Followed by 4 times 200m interval. 2 minutes rest.
+                        Afterwards 5 minutes cooldown with
+                        5 minutes stretching.
 
-                        'Calorie intake for the whole day': '3500 calories',
-                        'Protein intake for the whole day': '200g',
-                        'Carbohydrate intake for the whole day': '350g',
-                        'Fat intake for the whole day': '120g',
-                    }
-                    print(goal_data)
-                    return goal_data
+                        Calorie intake for the whole day: 3500 calories
+                        Protein intake for the whole day: 200g
+                        Carbohydrate intake for the whole day: 350g
+                        Fat intake for the whole day: 120g
+                        ''')
+                    restart_program()
 
         elif goals == '3':
             print('You want to maintain your weight-training!')
             while True:
-                goal_level = input('Please enter your goal level:' +
-                                   ' 1. Beginner'
-                                   ' 2. Intermediate'
-                                   ' 3. Advanced')
+                goal_level = input('''
+                       Please enter your goal level:
+                       1. Beginner
+                       2. Intermediate
+                       3. Advanced
+                       ''')
                 if goal_level == '1':
-                    print('Beginner training program and goals!')
-                    goal_data = {
-                        'goal': 'Beginner',
+                    print('''
+                       Beginner training program and goals!''')
+                    print('''
+                       Goal: Beginner
 
-                        'cardio': '30-40 minutes interval training'
-                        '5 minutes light running warmup'
-                        '3 times a 800m interval. 2 minutes rest'
-                        'between each interval.'
-                        'Afterwards 5 minutes cooldown with'
-                        '5 minutes stretching',
+                       Cardio: 30-40 minutes interval training
+                       5 minutes light running warmup
+                       3 times a 800m interval.
+                       2 minutes rest between each interval.
+                       Afterwards 5 minutes cooldown with
+                       5 minutes stretching.
 
-                        'Calorie intake for the whole day': '2200 calories',
-                        'Protein intake for the whole day': '160g',
-                        'Carbohydrate intake for the whole day': '190g',
-                        'Fat intake for the whole day': '80g',
-                    }
-                    print(goal_data)
-                    return goal_data
+                       Calorie intake for the whole day: 2200 calories
+                       Protein intake for the whole day: 160g
+                       Carbohydrate intake for the whole day: 190g
+                       Fat intake for the whole day: 80g
+                       ''')
+                    restart_program()
 
                 elif goal_level == '2':
-                    print('Intermediate training program and goals!')
-                    goal_data = {
-                        'goal': 'Intermediate',
+                    print('''
+                       Intermediate training program and goals!''')
+                    print('''
+                       Goal : Intermediate
 
-                        'cardio': '60-70 minutes interval training'
-                        '10 minutes light running warmup'
-                        '3 times a 200m interval. 2 minutes rest'
-                        'between each interval.'
-                        'Afterwards followed by 2 times 400m interval.'
-                        '1 minute rest in between.'
-                        'Followed by 2 times 800m interval. 2 minutes rest.'
-                        'Afterwards 5 minutes cooldown with'
-                        '5 minutes stretching',
+                       Cardio: 60-70 minutes interval training.
+                       10 minutes light running warmup
+                       3 times a 200m interval.
+                       2 minutes rest between each interval.
+                       Afterwards followed by 2 times 400m interval.
+                       1 minute rest in between.
+                       Followed by 2 times 800m interval. 2 minutes rest.
+                       Afterwards 5 minutes cooldown with
+                       5 minutes stretching.
 
-                        'Calorie intake for the whole day': '2500 calories',
-                        'Protein intake for the whole day': '180g',
-                        'Carbohydrate intake for the whole day': '220g',
-                        'Fat intake for the whole day': '100g',
-                    }
-                    print(goal_data)
-                    return goal_data
+                       Calorie intake for the whole day: 2500 calories
+                       Protein intake for the whole day: 180g
+                       Carbohydrate intake for the whole day: 220g
+                       Fat intake for the whole day: 100g
+                       ''')
+                    restart_program()
 
                 elif goal_level == '3':
                     print('''
-                  Advanced training program and goals!
-                          ''')
+                       Advanced training program and goals!''')
                     print('''
+                       Goal : Advanced
 
-                  goal : Advanced
-
-                  cardio : 60-70 minutes interval training
-                  10 minutes light running warmup
-                  3 times a 400m interval.
-                  2 minutes rest between each interval.
-                  Afterwards followed by 2 times 800m interval.
-                  1 minute rest in between.
-                  Followed by 4 times 200m interval.
-                         ''')
+                       Cardio : 60-70 minutes interval training
+                       10 minutes light running warmup
+                       3 times a 400m interval.
+                       2 minutes rest between each interval.
+                       Afterwards followed by 2 times 800m interval.
+                       1 minute rest in between.
+                       Followed by 4 times 200m interval.
+                       ''')
                     restart_program()
         else:
             print('Please enter a valid number!')
