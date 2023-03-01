@@ -29,8 +29,7 @@ def input_name():
     '''
     while True:
         name = input('''
-                  Enter your name in letters:
-                     ''')
+                  Enter your name in letters:''')
         if validate_name(name):
             return name
         else:
