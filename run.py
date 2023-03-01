@@ -314,7 +314,7 @@ def input_goals():
                          1 minute rest in between.
                          Followed by 4 times 200m interval.
                          ''')
-                    continue
+                    inst()
         else:
             print('Please enter a valid number!')
             continue
