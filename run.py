@@ -354,7 +354,6 @@ def inst():
         if instructions.lower() == 'start':
             print('''
                        Lets start!''')
-            input_name()
             return instructions
         elif instructions.lower() == 'info':
             print('''
