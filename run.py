@@ -129,20 +129,20 @@ def input_goals():
                        Beginner training program and goals!
                        ''')
                     print('''{
-                        Goal: Beginner
+                       Goal: Beginner
 
-                        Cardio: 30-40 minutes interval training
-                        5 minutes light running warmup
-                        3 times a 800m interval.
-                        2 minutes rest between each interval.
-                        Afterwards 5 minutes cooldown with
-                        5 minutes stretching.
+                       Cardio: 30-40 minutes interval training
+                       5 minutes light running warmup
+                       3 times a 800m interval.
+                       2 minutes rest between each interval.
+                       Afterwards 5 minutes cooldown with
+                       5 minutes stretching.
 
-                        Calorie intake for the whole day: 2000 calories
-                        Protein intake for the whole day: 160g
-                        Carbohydrate intake for the whole day: 190g
-                        Fat intake for the whole day: 80g
-                        ''')
+                       Calorie intake for the whole day: 2000 calories
+                       Protein intake for the whole day: 160g
+                       Carbohydrate intake for the whole day: 190g
+                       Fat intake for the whole day: 80g
+                       ''')
                     restart_program()
 
                 elif goal_level == '2':
@@ -150,45 +150,45 @@ def input_goals():
                        Intermediate training program and goals!
                        ''')
                     print('''
-                        Goal: Intermediate
+                       Goal: Intermediate
 
-                        Cardio: 60-70 minutes interval training
-                        10 minutes light running warmup
-                        3 times a 200m interval.
-                        2 minutes rest between each interval.
-                        Afterwards followed by 2 times 400m interval.
-                        1 minute rest in between.
-                        Followed by 2 times 800m interval. 2 minutes rest.
-                        Afterwards 5 minutes cooldown with
-                        5 minutes stretching.
+                       Cardio: 60-70 minutes interval training
+                       10 minutes light running warmup
+                       3 times a 200m interval.
+                       2 minutes rest between each interval.
+                       Afterwards followed by 2 times 400m interval.
+                       1 minute rest in between.
+                       Followed by 2 times 800m interval. 2 minutes rest.
+                       Afterwards 5 minutes cooldown with
+                       5 minutes stretching.
 
-                        Calorie intake for the whole day: 1800 calories
-                        Protein intake for the whole day: 180g
-                        Carbohydrate intake for the whole day: 170g
-                        Fat intake for the whole day: 60g
-                        ''')
+                       Calorie intake for the whole day: 1800 calories
+                       Protein intake for the whole day: 180g
+                       Carbohydrate intake for the whole day: 170g
+                       Fat intake for the whole day: 60g
+                       ''')
                     restart_program()
 
                 elif goal_level == '3':
                     print('''
-                        Advanced training program and goals!''')
+                       Advanced training program and goals!''')
                     print('''
-                        Goal: Advanced
+                       Goal: Advanced
 
-                        Cardio: 60-70 minutes interval training
-                        10 minutes light running warmup
-                        3 times a 400m interval.
-                        2 minutes rest between each interval.
-                        Afterwards followed by 2 times 800m interval.
-                        1 minute rest in between.
-                        Followed by 4 times 200m interval. 2 minutes rest.
-                        Afterwards 5 minutes cooldown with
-                        5 minutes stretching.
+                       Cardio: 60-70 minutes interval training
+                       10 minutes light running warmup
+                       3 times a 400m interval.
+                       2 minutes rest between each interval.
+                       Afterwards followed by 2 times 800m interval.
+                       1 minute rest in between.
+                       Followed by 4 times 200m interval. 2 minutes rest.
+                       Afterwards 5 minutes cooldown with
+                       5 minutes stretching.
 
-                        Calorie intake for the whole day: 1600 calories
-                        Protein intake for the whole day: 200g
-                        Carbohydrate intake for the whole day: 150g
-                        Fat intake for the whole day: 40g
+                       Calorie intake for the whole day: 1600 calories
+                       Protein intake for the whole day: 200g
+                       Carbohydrate intake for the whole day: 150g
+                       Fat intake for the whole day: 40g
                         ''')
                     restart_program()
 
@@ -204,68 +204,68 @@ def input_goals():
                        ''')
                 if goal_level == '1':
                     print('''
-                          Beginner training program and goals!''')
+                       Beginner training program and goals!''')
                     print('''
-                        Goal: Beginner
+                       Goal: Beginner
 
-                        Cardio: 30-40 minutes interval training
-                        5 minutes light running warmup
-                        3 times a 800m interval.
-                        2 minutes rest between each interval.
-                        Afterwards 5 minutes cooldown with
-                        5 minutes stretching.
+                       Cardio: 30-40 minutes interval training
+                       5 minutes light running warmup
+                       3 times a 800m interval.
+                       2 minutes rest between each interval.
+                       Afterwards 5 minutes cooldown with
+                       5 minutes stretching.
 
-                        Calorie intake for the whole day: 2800 calories
-                        Protein intake for the whole day: 160g
-                        Carbohydrate intake for the whole day: 250g
-                        Fat intake for the whole day: 80g
-                        ''')
+                       Calorie intake for the whole day: 2800 calories
+                       Protein intake for the whole day: 160g
+                       Carbohydrate intake for the whole day: 250g
+                       Fat intake for the whole day: 80g
+                       ''')
                     restart_program()
 
                 elif goal_level == '2':
                     print('''
-                        Intermediate training program and goals!''')
+                       Intermediate training program and goals!''')
                     print('''
-                        Goal: Intermediate
+                       Goal: Intermediate
 
-                        Cardio: 60-70 minutes interval training
-                        10 minutes light running warmup
-                        3 times a 200m interval.
-                        2 minutes rest between each interval.
-                        Afterwards followed by 2 times 400m interval.
-                        1 minute rest in between.
-                        Followed by 2 times 800m interval. 2 minutes rest.
-                        Afterwards 5 minutes cooldown with
-                        5 minutes stretching.
+                       Cardio: 60-70 minutes interval training
+                       10 minutes light running warmup
+                       3 times a 200m interval.
+                       2 minutes rest between each interval.
+                       Afterwards followed by 2 times 400m interval.
+                       1 minute rest in between.
+                       Followed by 2 times 800m interval. 2 minutes rest.
+                       Afterwards 5 minutes cooldown with
+                       5 minutes stretching.
 
-                        Calorie intake for the whole day: 3200 calories
-                        Protein intake for the whole day: 180g
-                        Carbohydrate intake for the whole day: 320g
-                        Fat intake for the whole day: 100g
-                        ''')
+                       Calorie intake for the whole day: 3200 calories
+                       Protein intake for the whole day: 180g
+                       Carbohydrate intake for the whole day: 320g
+                       Fat intake for the whole day: 100g
+                       ''')
                     restart_program()
 
                 elif goal_level == '3':
                     print('''
-                        Advanced training program and goals!''')
+                       Advanced training program and goals!''')
                     print('''
-                        Goal': Advanced
+                       Goal: Advanced
 
-                        Cardio: 60-70 minutes interval training
-                        10 minutes light running warmup
-                        3 times a 400m interval.
-                        2 minutes rest between each interval.
-                        Afterwards followed by 2 times 800m interval.
-                        1 minute rest in between.
-                        Followed by 4 times 200m interval. 2 minutes rest.
-                        Afterwards 5 minutes cooldown with
-                        5 minutes stretching.
+                       Cardio: 60-70 minutes interval training
+                       10 minutes light running warmup
+                       3 times a 400m interval.
+                       2 minutes rest between each interval.
+                       Afterwards followed by 2 times 800m interval.
+                       1 minute rest in between.
+                       Followed by 4 times 200m interval. 2 minutes rest.
+                       Afterwards 5 minutes cooldown with
+                       5 minutes stretching.
 
-                        Calorie intake for the whole day: 3500 calories
-                        Protein intake for the whole day: 200g
-                        Carbohydrate intake for the whole day: 350g
-                        Fat intake for the whole day: 120g
-                        ''')
+                       Calorie intake for the whole day: 3500 calories
+                       Protein intake for the whole day: 200g
+                       Carbohydrate intake for the whole day: 350g
+                       Fat intake for the whole day: 120g
+                       ''')
                     restart_program()
 
         elif goals == '3':
@@ -301,7 +301,7 @@ def input_goals():
                     print('''
                        Intermediate training program and goals!''')
                     print('''
-                       Goal : Intermediate
+                       Goal: Intermediate
 
                        Cardio: 60-70 minutes interval training.
                        10 minutes light running warmup
@@ -324,7 +324,7 @@ def input_goals():
                     print('''
                        Advanced training program and goals!''')
                     print('''
-                       Goal : Advanced
+                       Goal: Advanced
 
                        Cardio : 60-70 minutes interval training
                        10 minutes light running warmup
@@ -336,7 +336,8 @@ def input_goals():
                        ''')
                     restart_program()
         else:
-            print('Please enter a valid number!')
+            print('''
+                       Please enter a valid number!''')
             continue
 
 # Instructions
