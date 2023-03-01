@@ -301,18 +301,20 @@ def input_goals():
                     return goal_data
 
                 elif goal_level == '3':
-                    print('Advanced training program and goals!')
+                    print('''
+                  Advanced training program and goals!
+                          ''')
                     print('''
 
-                         goal : Advanced
+                  goal : Advanced
 
-                         cardio : 60-70 minutes interval training
-                         10 minutes light running warmup
-                         3 times a 400m interval.
-                         2 minutes rest between each interval.
-                         Afterwards followed by 2 times 800m interval.
-                         1 minute rest in between.
-                         Followed by 4 times 200m interval.
+                  cardio : 60-70 minutes interval training
+                  10 minutes light running warmup
+                  3 times a 400m interval.
+                  2 minutes rest between each interval.
+                  Afterwards followed by 2 times 800m interval.
+                  1 minute rest in between.
+                  Followed by 4 times 200m interval.
                          ''')
                     restart_program()
         else:
@@ -328,8 +330,8 @@ def inst():
     '''
     while True:
         instructions = input('''
-Here Are your options:
-Type "start" "info" or "exit"
+                  Here Are your options:
+                  Type "start" "info" or "exit"
 ''')
         if instructions.lower() == 'start':
             print('Lets start!')
@@ -371,8 +373,9 @@ def restart_program():
     once again or exit
     '''
     run_again = input('''
-Do you want to run the program again type "yes", "exit" or "menu".
-Otherwise "menu"? for the menu. ''')
+                  Do you want to run the program again type:
+                  "yes", "exit" or "menu".
+                  ''')
     if run_again.lower() == 'yes':
         input_goals()
     elif run_again.lower() == 'exit':
