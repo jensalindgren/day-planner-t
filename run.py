@@ -302,7 +302,7 @@ def input_goals():
 
                 elif goal_level == '3':
                     print('Advanced training program and goals!')
-                    goal_data = {'''
+                    print('''
 
                          goal : Advanced
 
@@ -313,8 +313,7 @@ def input_goals():
                          Afterwards followed by 2 times 800m interval.
                          1 minute rest in between.
                          Followed by 4 times 200m interval.
-                         '''}
-                    print(goal_data)
+                         ''')
                     return goal_data
         else:
             print('Please enter a valid number!')
