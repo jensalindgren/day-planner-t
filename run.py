@@ -360,7 +360,7 @@ Type "start" "info" or "exit"
             return instructions
         elif instructions.lower() == 'exit':
             print('Goodbye!')
-            break
+            exit()
 
 # Restart program
 
@@ -483,6 +483,8 @@ def main():
         input_goals()
 
         restart_program()
+        if restart_program() == 'no':
+            exit()
 
 
 main()
