@@ -355,6 +355,7 @@ def inst():
         if instructions.lower() == 'start':
             print('''
                        Lets start!''')
+            input_age()
             return instructions
         elif instructions.lower() == 'info':
             print('''
