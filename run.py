@@ -14,7 +14,9 @@ def welcome_message():
 
     ''')
 
-    print('Welcome to the Day Planner!')
+    print('''
+                       Welcome to the Day Planner!
+                       ''')
 
 
 print()
@@ -63,8 +65,10 @@ def input_sex():
     sex = input('''
                        Are you a "male" or "female":''')
     while sex not in ["male", "female"]:
-        print("Invalid sex")
-        sex = input('Please enter your sex: ')
+        print('''
+                       Invalid sex''')
+        sex = input('''
+                       Please enter your sex:''')
     return sex
 
 # Input height
@@ -108,17 +112,16 @@ def input_goals():
     while True:
         goals = input('''
                        Enter your goals for the day:
-                       
-                       1. Lose weight with cardio'
-                       2. Gain weight with weight-training'
+                       1. Lose weight with cardio:
+                       2. Gain weight with weight-training:
                        3. Maintain weight with weight-training:
                        ''')
         if goals == '1':
             while True:
                 goal_level = input('''
-                       Please enter your goal level:' +
+                       Please enter your goal level:
                        1. Beginner
-                       2. Intermediate'
+                       2. Intermediate
                        3. Advanced
                        ''')
                 if goal_level == '1':
@@ -342,38 +345,40 @@ def inst():
     '''
     while True:
         instructions = input('''
-                  Here Are your options:
-                  Type "start" "info" or "exit"
-''')
+                       Here Are your options:
+                       Type "start" "info" or "exit"
+                       ''')
         if instructions.lower() == 'start':
-            print('Lets start!')
+            print('''
+                       Lets start!''')
             return instructions
         elif instructions.lower() == 'info':
             print('''
-                  Welcome to the fitness application!
-                  This application will help you to
-                  create a training program and
-                  a meal plan based on your goals.
-                  You will be asked to enter your
-                  name, age, weight, height and
-                  your goals.
-                  The application will then create
-                  a training program and a meal plan
-                  for you.
+                       Welcome to the fitness application!
+                       This application will help you to
+                       create a training program and
+                       a meal plan based on your goals.
+                       You will be asked to enter your
+                       name, age, weight, height and
+                       your goals.
+                       The application will then create
+                       a training program and a meal plan
+                       for you.
 
-                  You can choose between 3 different goals:
-                  1. Weight loss
-                  2. Weight gain
-                  3. Maintain weight
-                  You can also choose between 3 different levels:
-                  1. Beginner
-                  2. Intermediate
-                  3. Advanced
-                  ''')
+                       You can choose between 3 different goals:
+                       1. Weight loss
+                       2. Weight gain
+                       3. Maintain weight
+                       You can also choose between 3 different levels:
+                       1. Beginner
+                       2. Intermediate
+                       3. Advanced
+                       ''')
             inst()
             return instructions
         elif instructions.lower() == 'exit':
-            print('Goodbye!')
+            print('''
+                       Goodbye!''')
             exit()
 
 # Restart program
@@ -385,16 +390,18 @@ def restart_program():
     once again or exit
     '''
     run_again = input('''
-                  Do you want to run the program again type:
-                  "yes", "exit" or "menu".
-                  ''')
+                       Do you want to run the program again type:
+                       "yes", "exit" or "menu".
+                       ''')
     if run_again.lower() == 'yes':
         input_goals()
     elif run_again.lower() == 'exit':
-        print('Goodbye!')
+        print('''
+                       Goodbye!''')
         exit()
     elif run_again.lower() == 'menu':
-        print('To the menu!')
+        print('''
+                       To the menu!''')
         inst()
 
 
@@ -408,9 +415,11 @@ def validate_name(name):
     '''
     try:
         if len(name) == 0:
-            raise ValueError('Please enter a valid name!')
+            raise ValueError('''
+                       Please enter a valid name!''')
     except ValueError:
-        print('Please enter a valid name!')
+        print('''
+                       Please enter a valid name!''')
         return False
 
     return True
@@ -427,9 +436,11 @@ def validate_age(age):
     try:
         age = int(age)
         if age < 0 or age > 120:
-            raise ValueError('Please enter a valid age between 1 and 120!')
+            raise ValueError('''
+                       Please enter a valid age between 1 and 120!''')
     except ValueError:
-        print('Please enter a valid age between 1 and 120!')
+        print('''
+                       Please enter a valid age between 1 and 120!''')
         return False
     return True
 
@@ -444,10 +455,11 @@ def validate_height(height):
     try:
         height = int(height)
         if height < 100 or height > 250:
-            raise ValueError('Please enter a valid' +
-                             'height between 100cm and 250cm!')
+            raise ValueError('''
+                       Please enter a valid height between 100cm and 250cm!''')
     except ValueError:
-        print('Please enter a valid height between 100cm and 250cm!')
+        print('''
+                       Please enter a valid height between 100cm and 250cm!''')
         return False
     return True
 
@@ -462,10 +474,11 @@ def validate_weight(weight):
     try:
         weight = int(weight)
         if weight < 40 or weight > 200:
-            raise ValueError('Please enter a valid' +
-                             'weight between 40kg and 200kg!')
+            raise ValueError('''
+                       Please enter a valid weight between 40kg and 200kg!''')
     except ValueError:
-        print('Please enter a valid weight between 40kg and 200kg!')
+        print('''
+                       Please enter a valid weight between 40kg and 200kg!''')
         return False
     return True
 
