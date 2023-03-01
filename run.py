@@ -6,11 +6,11 @@ def welcome_message():
     Display the welcome logo and message
     '''
     print('''
-    # # #   ####  #    #   #### #     ####  #    # #    # ##### #####
-    #     # #   #  # #    #   # #     #   # ##   # ##   # #     #   #
-    #     # #####   #     ####  #     ##### # #  # # #  # ##### ####
-    #     # #   #   #     #     #     #   # #  # # #  # # #     # #
-    # # #   #   #   #     #     ##### #   # #   ## #   ## ##### #  ##
+      # # #   ####  #    #   #### #     ####  #    # #    # ##### #####
+      #     # #   #  # #    #   # #     #   # ##   # ##   # #     #   #
+      #     # #####   #     ####  #     ##### # #  # # #  # ##### ####
+      #     # #   #   #     #     #     #   # #  # # #  # # #     # #
+      # # #   #   #   #     #     ##### #   # #   ## #   ## ##### #  ##
 
     ''')
 
@@ -29,7 +29,7 @@ def input_name():
     '''
     while True:
         name = input('''
-                  Enter your name in letters:''')
+                       Enter your name in letters:''')
         if validate_name(name):
             return name
         else:
@@ -43,7 +43,8 @@ def input_age():
     collect the user age. And return it.
     '''
     while True:
-        age = input('Please enter your age: ')
+        age = input('''
+                       Please enter your age:''')
         if validate_age(age):
             return int(age)
         else:
@@ -59,7 +60,8 @@ def input_sex():
     Also check if the sex is valid.
     And display error massage.
     '''
-    sex = input('Are you a "male" or "female": ')
+    sex = input('''
+                       Are you a "male" or "female":''')
     while sex not in ["male", "female"]:
         print("Invalid sex")
         sex = input('Please enter your sex: ')
@@ -73,7 +75,8 @@ def input_height():
     Collect the user height. And return it.
     '''
     while True:
-        height = input('Enter your height in cm: ')
+        height = input('''
+                       Enter your height in cm:''')
         if validate_height(height):
             return int(height)
         else:
@@ -87,7 +90,8 @@ def input_weight():
     Collect the user weight. And return it.
     '''
     while True:
-        weight = input('Enter your weight in kg: ')
+        weight = input('''
+                       Enter your weight in kg:''')
         if validate_weight(weight):
             return int(weight)
         else:
@@ -102,18 +106,25 @@ def input_goals():
     Collect the user goals. And return it.
     '''
     while True:
-        goals = input('Enter your goals for the day:' +
-                      ' 1. Lose weight with cardio'
-                      ' 2. Gain weight with weight-training'
-                      ' 3. Maintain weight with weight-training:')
+        goals = input('''
+                       Enter your goals for the day:
+                       
+                       1. Lose weight with cardio'
+                       2. Gain weight with weight-training'
+                       3. Maintain weight with weight-training:
+                       ''')
         if goals == '1':
             while True:
-                goal_level = input('Please enter your goal level:' +
-                                   ' 1. Beginner'
-                                   ' 2. Intermediate'
-                                   ' 3. Advanced')
+                goal_level = input('''
+                       Please enter your goal level:' +
+                       1. Beginner
+                       2. Intermediate'
+                       3. Advanced
+                       ''')
                 if goal_level == '1':
-                    print('Beginner training program and goals!')
+                    print('''
+                       Beginner training program and goals!
+                       ''')
                     goal_data = {
                         'goal': 'Beginner',
 
