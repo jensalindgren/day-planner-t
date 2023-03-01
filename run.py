@@ -512,9 +512,5 @@ def main():
 
         input_goals()
 
-        restart_program()
-        if restart_program() == 'no':
-            exit()
-
 
 main()
