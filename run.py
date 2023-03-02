@@ -9,6 +9,8 @@ e_color = Back.RED
 d_color = Fore.LIGHTYELLOW_EX
 # Reset to normal
 reset_all = Style.RESET_ALL
+# Welcome message
+b_color = Fore.BLUE
 
 # Output welcome message
 
@@ -17,7 +19,7 @@ def welcome_message():
     '''
     Display the welcome logo and message
     '''
-    print(Style.BRIGHT + Fore.LIGHTGREEN_EX + '''
+    print(Style.BRIGHT + Fore.BLUE + '''
       # # #   ####  #    #   #### #     ####  #    # #    # ##### #####
       #     # #   #  # #    #   # #     #   # ##   # ##   # #     #   #
       #     # #####   #     ####  #     ##### # #  # # #  # ##### ####
@@ -431,11 +433,14 @@ def validate_name(name):
     '''
     try:
         if len(name) == 0:
-            raise name.isdigit()(e_color + '''
+            raise ValueError(e_color + '''
                        Enter a name in letters!''')
-    except name.isdigit():
+        elif name.isdigit():
+            raise ValueError(e_color + '''
+                       Enter a name in letters!''')
+    except ValueError:
         print(e_color + '''
-                       Enter a name in letters!''' + reset_all)
+                       Enter a name in letters!''')
         return False
     return True
 
