@@ -25,9 +25,9 @@ def welcome_message():
       # # #   #   #   #     #     ##### #   # #   ## #   ## ##### #  ##
     ''')
 
-    print('''
+    print(Style.BRIGHT + d_color + '''
                        Welcome to the Day Planner!
-                       ''')
+                       ''' + reset_all)
 
 
 print()
@@ -139,7 +139,7 @@ def input_goals():
                     print(Style.BRIGHT + Fore.LIGHTYELLOW_EX + '''
                        Beginner training program and goals!
                        ''')
-                    print('''{
+                    print('''
                        Level: Beginner
 
                        Cardio: 30-40 minutes interval training
@@ -431,17 +431,11 @@ def validate_name(name):
     '''
     try:
         if len(name) == 0:
-            raise ValueError(e_color + '''
-                       Enter a valid name in letters!
-                       ''' + reset_all)
+            raise ValueError(e_color + '''Enter a name in letters!''')
         elif name.isdigit():
-            raise ValueError(e_color + '''
-                       Enter a valid name in letters!
-                       ''' + reset_all)
+            raise ValueError(e_color + '''Enter a name in letters!''')
     except ValueError:
-        print(e_color + '''
-                       Enter a valid name in letters!
-                       ''' + reset_all)
+        print(e_color + '''Enter a name in letters!''' + reset_all)
         return False
 
     return True
