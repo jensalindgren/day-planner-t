@@ -5,6 +5,7 @@ from colorama import Fore, Back, Style
 i_color = Fore.LIGHTGREEN_EX        # Input color
 e_color = Back.RED                  # Error color
 d_color = Fore.LIGHTYELLOW_EX       # Data color
+reset_all = Style.RESET_ALL         # Reset to normal
 
 # Output welcome message
 
@@ -37,7 +38,7 @@ def input_name():
     Collect the user name. And return it.
     '''
     while True:
-        name = input('''
+        name = input(Style.RESET_ALL + '''
                        Enter your name in letters:''')
         if validate_name(name):
             return name
