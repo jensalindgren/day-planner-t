@@ -440,7 +440,7 @@ def validate_name(name):
                        Enter a name in letters!''')
     except ValueError:
         print(e_color + '''
-                       Enter a name in letters!''')
+                       Enter a name in letters!''' + reset_all)
         return False
     return True
 
