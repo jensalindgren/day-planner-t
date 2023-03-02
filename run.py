@@ -420,6 +420,9 @@ def validate_name(name):
         if len(name) == 0:
             raise ValueError('''
                        Please enter a valid name!''')
+        elif name.isdigit():
+            raise ValueError('''
+                       Please enter a valid name!''')
     except ValueError:
         print('''
                        Please enter a valid name!''')
