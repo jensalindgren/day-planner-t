@@ -90,8 +90,8 @@ def input_height():
     Collect the user height. And return it.
     '''
     while True:
-        height = input('''
-                       Enter your height in cm:''')
+        height = input(i_color + '''
+                       Enter your height in cm:''' + reset_all)
         if validate_height(height):
             return int(height)
         else:
@@ -105,8 +105,8 @@ def input_weight():
     Collect the user weight. And return it.
     '''
     while True:
-        weight = input('''
-                       Enter your weight in kg:''')
+        weight = input(i_color + '''
+                       Enter your weight in kg:''' + reset_all)
         if validate_weight(weight):
             return int(weight)
         else:
@@ -121,26 +121,26 @@ def input_goals():
     Collect the user goals. And return it.
     '''
     while True:
-        goals = input('''
+        goals = input(i_color + '''
                        Enter your goals for the day:
                        1. Lose weight with cardio:
                        2. Gain weight with weight-training:
                        3. Maintain weight with weight-training:
-                       ''')
+                       ''' + reset_all)
         if goals == '1':
             while True:
-                goal_level = input('''
-                       Please enter your goal level:
+                goal_level = input(i_color + '''
+                       Please enter your level:
                        1. Beginner
                        2. Intermediate
                        3. Advanced
-                       ''')
+                       ''' + reset_all)
                 if goal_level == '1':
-                    print('''
+                    print(Style.BRIGHT + Fore.LIGHTYELLOW_EX + '''
                        Beginner training program and goals!
                        ''')
                     print('''{
-                       Goal: Beginner
+                       Level: Beginner
 
                        Cardio: 30-40 minutes interval training
                        5 minutes light running warmup
@@ -157,11 +157,11 @@ def input_goals():
                     restart_program()
 
                 elif goal_level == '2':
-                    print('''
+                    print(Style.BRIGHT + Fore.LIGHTYELLOW_EX + '''
                        Intermediate training program and goals!
                        ''')
                     print('''
-                       Goal: Intermediate
+                       Level: Intermediate
 
                        Cardio: 60-70 minutes interval training
                        10 minutes light running warmup
@@ -181,10 +181,10 @@ def input_goals():
                     restart_program()
 
                 elif goal_level == '3':
-                    print('''
+                    print(Style.BRIGHT + Fore.LIGHTYELLOW_EX + '''
                        Advanced training program and goals!''')
                     print('''
-                       Goal: Advanced
+                       Level: Advanced
 
                        Cardio: 60-70 minutes interval training
                        10 minutes light running warmup
@@ -204,17 +204,17 @@ def input_goals():
                     restart_program()
 
         elif goals == '2':
-            print('''
-                        You want to gain weight-training!''')
+            print(Style.BRIGHT + Fore.LIGHTYELLOW_EX + '''
+                       You want to gain weight-training!''')
             while True:
-                goal_level = input('''
+                goal_level = input(i_color + '''
                        Please enter your goal level:
                        1. Beginner
                        2. Intermediate
                        3. Advanced
-                       ''')
+                       ''' + reset_all)
                 if goal_level == '1':
-                    print('''
+                    print(Style.BRIGHT + Fore.LIGHTYELLOW_EX + '''
                        Beginner training program and goals!''')
                     print('''
                        Goal: Beginner
@@ -234,7 +234,7 @@ def input_goals():
                     restart_program()
 
                 elif goal_level == '2':
-                    print('''
+                    print(Style.BRIGHT + Fore.LIGHTYELLOW_EX + '''
                        Intermediate training program and goals!''')
                     print('''
                        Goal: Intermediate
@@ -257,7 +257,7 @@ def input_goals():
                     restart_program()
 
                 elif goal_level == '3':
-                    print('''
+                    print(Style.BRIGHT + Fore.LIGHTYELLOW_EX + '''
                        Advanced training program and goals!''')
                     print('''
                        Goal: Advanced
@@ -280,16 +280,17 @@ def input_goals():
                     restart_program()
 
         elif goals == '3':
-            print('You want to maintain your weight-training!')
+            print(Style.BRIGHT + Fore.LIGHTYELLOW_EX + '''
+                       You want to maintain your weight-training!''')
             while True:
-                goal_level = input('''
+                goal_level = input(i_color + '''
                        Please enter your goal level:
                        1. Beginner
                        2. Intermediate
                        3. Advanced
-                       ''')
+                       ''' + reset_all)
                 if goal_level == '1':
-                    print('''
+                    print(Style.BRIGHT + Fore.LIGHTYELLOW_EX + '''
                        Beginner training program and goals!''')
                     print('''
                        Goal: Beginner
@@ -309,7 +310,7 @@ def input_goals():
                     restart_program()
 
                 elif goal_level == '2':
-                    print('''
+                    print(Style.BRIGHT + Fore.LIGHTYELLOW_EX + '''
                        Intermediate training program and goals!''')
                     print('''
                        Goal: Intermediate
@@ -332,7 +333,7 @@ def input_goals():
                     restart_program()
 
                 elif goal_level == '3':
-                    print('''
+                    print(Style.BRIGHT + Fore.LIGHTYELLOW_EX + '''
                        Advanced training program and goals!''')
                     print('''
                        Goal: Advanced
@@ -347,8 +348,8 @@ def input_goals():
                        ''')
                     restart_program()
         else:
-            print('''
-                       Please enter a valid number!''')
+            print(e_color + '''
+                       Please enter a valid number!''' + reset_all)
             continue
 
 # Instructions
@@ -359,16 +360,16 @@ def inst():
     Help the user to use the application
     '''
     while True:
-        instructions = input('''
+        instructions = input(i_color + '''
                        Here Are your options:
                        Type "start" "info" or "exit"
-                       ''')
+                       ''' + reset_all)
         if instructions.lower() == 'start':
-            print('''
+            print(Style.BRIGHT + Fore.LIGHTYELLOW_EX + '''
                        Lets start!''')
             return instructions
         elif instructions.lower() == 'info':
-            print('''
+            print(Style.BRIGHT + Fore.LIGHTYELLOW_EX + '''
                        Welcome to the fitness application!
                        This application will help you to
                        create a training program and
@@ -388,11 +389,11 @@ def inst():
                        1. Beginner
                        2. Intermediate
                        3. Advanced
-                       ''')
+                       ''' + reset_all)
             inst()
             return instructions
         elif instructions.lower() == 'exit':
-            print('''
+            print(Style.BRIGHT + Fore.LIGHTYELLOW_EX + '''
                        Goodbye!''')
             exit()
 
@@ -404,18 +405,18 @@ def restart_program():
     Allow the user to run the application
     once again or exit
     '''
-    run_again = input('''
+    run_again = input(i_color + '''
                        Do you want to run the program again type:
                        "yes", "exit" or "menu".
-                       ''')
+                       ''' + reset_all)
     if run_again.lower() == 'yes':
         input_goals()
     elif run_again.lower() == 'exit':
-        print('''
+        print(Style.BRIGHT + Fore.LIGHTYELLOW_EX + '''
                        Goodbye!''')
         exit()
     elif run_again.lower() == 'menu':
-        print('''
+        print(Style.BRIGHT + Fore.LIGHTYELLOW_EX + '''
                        To the menu!''')
         inst()
 
@@ -430,14 +431,14 @@ def validate_name(name):
     '''
     try:
         if len(name) == 0:
-            raise ValueError('''
-                       Please enter a valid name!''')
+            raise ValueError(e_color + '''
+                       Please enter a valid name!''' + reset_all)
         elif name.isdigit():
-            raise ValueError('''
-                       Please enter a valid name in letters!''')
+            raise ValueError(e_color + '''
+                       Please enter a valid name in letters!''' + reset_all)
     except ValueError:
-        print('''
-                       Please enter a valid name!''')
+        print(e_color + '''
+                       Please enter a valid name!''' + reset_all)
         return False
 
     return True
@@ -454,11 +455,11 @@ def validate_age(age):
     try:
         age = int(age)
         if age < 0 or age > 120:
-            raise ValueError('''
-                       Please enter a valid age between 1 and 120!''')
+            raise ValueError(e_color + '''
+                       Enter a valid age between 1 and 120!''' + reset_all)
     except ValueError:
-        print('''
-                       Please enter a valid age between 1 and 120!''')
+        print(e_color + '''
+                       Enter a valid age between 1 and 120!''' + reset_all)
         return False
     return True
 
@@ -473,11 +474,13 @@ def validate_height(height):
     try:
         height = int(height)
         if height < 100 or height > 250:
-            raise ValueError('''
-                       Please enter a valid height between 100cm and 250cm!''')
+            raise ValueError(e_color + '''
+                       Enter a valid height between 100cm and 250cm!
+                       ''' + reset_all)
     except ValueError:
-        print('''
-                       Please enter a valid height between 100cm and 250cm!''')
+        print(e_color + '''
+                       Enter a valid height between 100cm and 250cm!
+                       ''' + reset_all)
         return False
     return True
 
@@ -492,11 +495,13 @@ def validate_weight(weight):
     try:
         weight = int(weight)
         if weight < 40 or weight > 200:
-            raise ValueError('''
-                       Please enter a valid weight between 40kg and 200kg!''')
+            raise ValueError(e_color + '''
+                       Enter a valid weight between 40kg and 200kg!
+                       ''' + reset_all)
     except ValueError:
-        print('''
-                       Please enter a valid weight between 40kg and 200kg!''')
+        print(e_color + '''
+                       Enter a valid weight between 40kg and 200kg!
+                       ''' + reset_all)
         return False
     return True
 
