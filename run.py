@@ -432,13 +432,16 @@ def validate_name(name):
     try:
         if len(name) == 0:
             raise ValueError(e_color + '''
-                       Please enter a valid name!''' + reset_all)
+                       Enter a valid name in letters!
+                       ''' + reset_all)
         elif name.isdigit():
             raise ValueError(e_color + '''
-                       Please enter a valid name in letters!''' + reset_all)
+                       Enter a valid name in letters!
+                       ''' + reset_all)
     except ValueError:
         print(e_color + '''
-                       Please enter a valid name!''' + reset_all)
+                       Enter a valid name in letters!
+                       ''' + reset_all)
         return False
 
     return True
@@ -475,10 +478,10 @@ def validate_height(height):
         height = int(height)
         if height < 100 or height > 250:
             raise ValueError(e_color + '''
-                       Enter a valid height between 100cm - 250cm!''')
+                       Enter a height between 100cm - 250cm!''' + reset_all)
     except ValueError:
         print(e_color + '''
-                       Enter a valid height between 100cm - 250cm!''')
+                       Enter a height between 100cm - 250cm!''' + reset_all)
         return False
     return True
 
@@ -494,10 +497,10 @@ def validate_weight(weight):
         weight = int(weight)
         if weight < 40 or weight > 200:
             raise ValueError(e_color + '''
-                       Enter a valid weight between 40kg and 200kg!''')
+                       Enter a weight between 40kg and 200kg!''' + reset_all)
     except ValueError:
         print(e_color + '''
-                       Enter a valid weight between 40kg and 200kg!''')
+                       Enter a weight between 40kg and 200kg!''' + reset_all)
         return False
     return True
 
@@ -530,4 +533,3 @@ def main():
 
 
 main()
-
