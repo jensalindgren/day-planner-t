@@ -524,7 +524,7 @@ def inst():
                        You will be asked to enter your
                        name, age, weight, height,
                        goals, and your experience level.
-                       
+
                        The application will then create
                        a training program and a meal plan
                        for you. The meal plan will be
@@ -540,7 +540,7 @@ def inst():
                        1. Beginner
                        2. Intermediate
                        3. Advanced
-                       
+
                        Just follow the instructions and have fun.
                        Best of luck from the creator Jens Lindgren!
                        ''' + reset_all)
@@ -672,6 +672,7 @@ def main():
     Run all the functions.
     '''
     welcome_message()
+
     while True:
 
         inst()
