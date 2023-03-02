@@ -398,6 +398,11 @@ def inst():
             print(Style.BRIGHT + Fore.LIGHTYELLOW_EX + '''
                        Goodbye!''')
             exit()
+        elif instructions.lower() != 'start' or 'info' or 'exit':
+            print(e_color + '''
+                       Please enter a valid option!''' + reset_all)
+            inst()
+            return instructions
 
 # Restart program
 
@@ -421,6 +426,10 @@ def restart_program():
         print(Style.BRIGHT + Fore.LIGHTYELLOW_EX + '''
                        To the menu!''')
         inst()
+    elif run_again.lower() != 'yes' or 'exit' or 'menu':
+        print(e_color + '''
+                       Please enter a valid option!''' + reset_all)
+        restart_program()
 
 
 # Validate name
