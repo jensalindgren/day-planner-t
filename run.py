@@ -517,25 +517,32 @@ def inst():
             return instructions
         elif instructions.lower() == 'info':
             print(Style.BRIGHT + Fore.LIGHTYELLOW_EX + '''
-                       Welcome to the fitness application!
+                       Welcome to the Day Planner application!
                        This application will help you to
                        create a training program and
                        a meal plan based on your goals.
                        You will be asked to enter your
-                       name, age, weight, height and
-                       your goals.
+                       name, age, weight, height,
+                       goals, and your experience level.
+                       
                        The application will then create
                        a training program and a meal plan
-                       for you.
+                       for you. The meal plan will be
+                       with a calorie, protein, fat and
+                       carbohydrate intake. Its just suggestions.
+                       So dont have to follow it to 100%.
 
                        You can choose between 3 different goals:
-                       1. Weight loss
-                       2. Weight gain
-                       3. Maintain weight
+                       1. Lose weight with cardio:
+                       2. Gain weight with weight training:
+                       3. Maintain weight with bodyweight training:
                        You can also choose between 3 different levels:
                        1. Beginner
                        2. Intermediate
                        3. Advanced
+                       
+                       Just follow the instructions and have fun.
+                       Best of luck from the creator Jens Lindgren!
                        ''' + reset_all)
             inst()
             return instructions
