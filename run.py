@@ -17,7 +17,7 @@ def welcome_message():
     '''
     Display the welcome logo and message
     '''
-    print(Style.BRIGHT + e_color + '''
+    print(Style.BRIGHT + Fore.LIGHTGREEN_EX + '''
       # # #   ####  #    #   #### #     ####  #    # #    # ##### #####
       #     # #   #  # #    #   # #     #   # ##   # ##   # #     #   #
       #     # #####   #     ####  #     ##### # #  # # #  # ##### ####
