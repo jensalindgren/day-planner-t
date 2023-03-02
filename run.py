@@ -200,6 +200,10 @@ def input_goals():
                        Fat intake for the whole day: 40g
                         ''')
                     restart_program()
+                else:
+                    print(e_color + '''
+                       Invalid input''' + reset_all)
+                    continue
 
         elif goals == '2':
             print(Style.BRIGHT + Fore.LIGHTYELLOW_EX + '''
@@ -276,6 +280,10 @@ def input_goals():
                        Fat intake for the whole day: 120g
                        ''')
                     restart_program()
+                else:
+                    print(e_color + '''
+                       Invalid input''' + reset_all)
+                    continue
 
         elif goals == '3':
             print(Style.BRIGHT + Fore.LIGHTYELLOW_EX + '''
@@ -347,7 +355,7 @@ def input_goals():
                     restart_program()
                 else:
                     print(e_color + '''
-                       Please enter a valid number!''' + reset_all)
+                       Invalid input''' + reset_all)
                     continue
         else:
             print(e_color + '''
