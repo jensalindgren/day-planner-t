@@ -349,6 +349,10 @@ def input_goals():
                        Followed by 4 times 200m interval.
                        ''')
                     restart_program()
+                else:
+                    print(e_color + '''
+                       Please enter a valid number!''' + reset_all)
+                    continue
         else:
             print(e_color + '''
                        Please enter a valid number!''' + reset_all)
