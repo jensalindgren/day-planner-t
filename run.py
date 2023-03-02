@@ -1,3 +1,8 @@
+# Colorama is used to color the text in the terminal
+
+# Color tags
+
+
 # Output welcome message
 
 
