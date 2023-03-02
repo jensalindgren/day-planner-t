@@ -1,8 +1,10 @@
 # Colorama is used to color the text in the terminal
-import colorama
-colorama.init()
-# Color tags
+from colorama import Fore, Back, Style
 
+# Color tags
+i_color = Fore.LIGHTGREEN_EX        # Input color
+e_color = Back.RED                  # Error color
+d_color = Fore.LIGHTYELLOW_EX       # Data color
 
 # Output welcome message
 
@@ -11,7 +13,7 @@ def welcome_message():
     '''
     Display the welcome logo and message
     '''
-    print(colorama.Fore.GREEN + '''
+    print(Style.BRIGHT + Fore.LIGHTYELLOW_EX + '''
       # # #   ####  #    #   #### #     ####  #    # #    # ##### #####
       #     # #   #  # #    #   # #     #   # ##   # ##   # #     #   #
       #     # #####   #     ####  #     ##### # #  # # #  # ##### ####
