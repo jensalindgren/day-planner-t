@@ -475,12 +475,10 @@ def validate_height(height):
         height = int(height)
         if height < 100 or height > 250:
             raise ValueError(e_color + '''
-                       Enter a valid height between 100cm and 250cm!
-                       ''' + reset_all)
+                       Enter a valid height between 100cm - 250cm!''')
     except ValueError:
         print(e_color + '''
-                       Enter a valid height between 100cm and 250cm!
-                       ''' + reset_all)
+                       Enter a valid height between 100cm - 250cm!''')
         return False
     return True
 
@@ -496,12 +494,10 @@ def validate_weight(weight):
         weight = int(weight)
         if weight < 40 or weight > 200:
             raise ValueError(e_color + '''
-                       Enter a valid weight between 40kg and 200kg!
-                       ''' + reset_all)
+                       Enter a valid weight between 40kg and 200kg!''')
     except ValueError:
         print(e_color + '''
-                       Enter a valid weight between 40kg and 200kg!
-                       ''' + reset_all)
+                       Enter a valid weight between 40kg and 200kg!''')
         return False
     return True
 
