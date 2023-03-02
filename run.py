@@ -31,10 +31,6 @@ def welcome_message():
                        Welcome to the Day Planner!
                        ''' + reset_all)
 
-
-print()
-
-
 # Input name
 
 
