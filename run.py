@@ -122,8 +122,8 @@ def input_goals():
         goals = input(i_color + '''
                        Enter your goals for the day:
                        1. Lose weight with cardio:
-                       2. Gain weight with weight-training:
-                       3. Maintain weight with weight-training:
+                       2. Gain weight with weight training:
+                       3. Maintain weight with bodyweight training:
                        ''' + reset_all)
         if goals == '1':
             while True:
@@ -207,7 +207,7 @@ def input_goals():
 
         elif goals == '2':
             print(Style.BRIGHT + Fore.LIGHTYELLOW_EX + '''
-                       You want to gain weight-training!''')
+                       You want to gain weight with weight training!''')
             while True:
                 goal_level = input(i_color + '''
                        Please enter your level:
@@ -221,12 +221,15 @@ def input_goals():
                     print('''
                        Level: Beginner
 
-                       Cardio: 30-40 minutes interval training
-                       5 minutes light running warmup
-                       3 times a 800m interval.
-                       2 minutes rest between each interval.
-                       Afterwards 5 minutes cooldown with
-                       5 minutes stretching.
+                       Weight training: 40-60 minutes weight training.
+                       5 minutes stretching warmup, for the whole body.
+                       3 times a 8-12 reps of each exercise.
+                       Starting with squats, bench press, deadlifts.
+                       Try to increase the weight each set. 2 minutes rest
+                       Between each set.Dont forget to stretch the muscle group
+                       you are working on.
+                       Afterwards military press, bent over rows, pull ups.
+                       5 minutes cooldown with 5 minutes stretching.
 
                        Calorie intake for the whole day: 2800 calories
                        Protein intake for the whole day: 160g
@@ -241,13 +244,34 @@ def input_goals():
                     print('''
                        Level: Intermediate
 
-                       Cardio: 60-70 minutes interval training
-                       10 minutes light running warmup
-                       3 times a 200m interval.
-                       2 minutes rest between each interval.
-                       Afterwards followed by 2 times 400m interval.
-                       1 minute rest in between.
-                       Followed by 2 times 800m interval. 2 minutes rest.
+                       Weight training: 60-90 minutes weight training.
+                       10 minutes stretching warmup, for the whole body.
+                       Take some time to warm up the muscles.
+                       With some light weight exercises. For example:
+                       Shoulders: 3 sets of 10 reps of lateral raises.
+                       Pull ups: 3 sets of 10 reps.
+                       Air squats: 3 sets of 10 reps.
+
+                       Important: 2 minutes rest between each set.
+                       Focus on the form of the exercise.
+                       Dont try to max out on the weight.
+                       For the main exercises:
+
+                       Back/legs: 3 sets of 8-12 reps of deadlifts.
+                       Legs: 3 sets of 8-12 reps of squats.
+                       Chest: 3 sets of 8-12 reps of bench press.
+                       Shoulders: 3 sets of 8-12 reps of military press.
+
+                       Try to increase the weight in each set.
+                       You can variate the exercises with dumbbells
+                       or a barbell.
+
+                       Super set: 3 sets of 8-12 reps of bent over rows.
+                       With 3 sets of 8-12 reps of dumbbell curls.
+
+                       Followed by 3 sets of 8-12 reps of tricep pushdowns.
+                       With 3 sets of 8-12 reps of tricep dips.
+
                        Afterwards 5 minutes cooldown with
                        5 minutes stretching.
 
@@ -264,15 +288,44 @@ def input_goals():
                     print('''
                        Level: Advanced
 
-                       Cardio: 60-70 minutes interval training
-                       10 minutes light running warmup
-                       3 times a 400m interval.
-                       2 minutes rest between each interval.
-                       Afterwards followed by 2 times 800m interval.
-                       1 minute rest in between.
-                       Followed by 4 times 200m interval. 2 minutes rest.
-                       Afterwards 5 minutes cooldown with
-                       5 minutes stretching.
+                       Weight training: 60-90 minutes weight training.
+                       10 minutes stretching warmup, for the whole body.
+                       Take some time to warm up the muscles.
+                       With some light weight exercises. For example:
+                       Shoulders: 3 sets of 10 reps of lateral raises.
+                       Good mornings: 3 sets of 10 reps.
+                       Kettlebell swings: 3 sets of 10 reps.
+                       Air squats: 3 sets of 10 reps.
+
+                       Important: 2 minutes rest between each set.
+                       For the main exercises:
+
+                       Back/legs: 6 sets of 2-4 reps of deadlifts.
+                       Work your way up to 80% of your max weight.
+                       Take your time to and get at least 5 sets
+                       of warmup sets done before you start.
+                       
+                       Squats: 6 sets of 2 reps.
+                       work with 90% of your max weight.
+                       Try to have eat least 6 sets of warmup sets.
+                       Focus on your form and technique.
+                       
+                       After that we will do some dumbbell exercises.
+                       Dumbbell bench press: 4 sets of 8 reps.
+                       with 70% of your max weight.
+                       
+                       Followed by dumbbell rows: 4 sets of 8 reps.
+                       Try to work with 90% of your max weight.
+                       
+                       Last but not least we will do some tricep exercises.
+                       Heavy tricep pushdowns: 4 sets of 8 reps.
+                       Go as heavy as you can. With good form.
+                       
+                       Some light abs exercises: 4 sets of 20 reps.
+                       leg raises, planks, side planks.
+                       Try to hold the plank exercise for 30 seconds.
+                       
+                       End with some stretching exercises for 5 minutes.
 
                        Calorie intake for the whole day: 3500 calories
                        Protein intake for the whole day: 200g
@@ -518,8 +571,6 @@ def validate_weight(weight):
                        Enter a weight between 40kg and 200kg!''' + reset_all)
         return False
     return True
-
-# Display the results
 
 
 # Main function
