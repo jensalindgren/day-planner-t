@@ -46,7 +46,7 @@ def input_name():
         name = input(i_color + '''
                        Enter your name in letters:''' + reset_all)
         if validate_name(name):
-            return name
+            return int(name)
         else:
             continue
 
