@@ -25,7 +25,7 @@ def welcome_message():
       #     # #####   #     ####  #     ##### # #  # # #  # ##### ####
       #     # #   #   #     #     #     #   # #  # # #  # # #     # #
       # # #   #   #   #     #     ##### #   # #   ## #   ## ##### #  ##
-    ''')
+    ''' + reset_all)
 
     print(Style.BRIGHT + d_color + '''
                        Welcome to the Day Planner!
