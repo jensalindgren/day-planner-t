@@ -433,10 +433,7 @@ def validate_name(name):
         if len(name) == 0:
             raise ValueError(e_color + '''
                        Enter a name in letters!''')
-        elif name.isdigit():
-            raise ValueError(e_color + '''
-                       Enter a name in letters!''')
-    except ValueError:
+    except name.isdigit():
         print(e_color + '''
                        Enter a name in letters!''' + reset_all)
         return False
