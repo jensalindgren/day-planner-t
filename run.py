@@ -41,7 +41,7 @@ def input_name():
     Collect the user name. And return it.
     '''
     while True:
-        name = input(+ i_color + '''
+        name = input(i_color + '''
                        Enter your name in letters:''' + reset_all)
         if validate_name(name):
             return name
