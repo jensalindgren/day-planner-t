@@ -147,6 +147,8 @@ def input_goals():
                        Afterwards 5 minutes cooldown with
                        5 minutes stretching.
 
+                       This is what we suggest you can consume for
+                       the whole day. It is not a must to follow this.
                        Calorie intake for the whole day: 2000 calories
                        Protein intake for the whole day: 160g
                        Carbohydrate intake for the whole day: 190g
@@ -171,6 +173,8 @@ def input_goals():
                        Afterwards 5 minutes cooldown with
                        5 minutes stretching.
 
+                       This is what we suggest you can consume for
+                       the whole day. It is not a must to follow this.
                        Calorie intake for the whole day: 1800 calories
                        Protein intake for the whole day: 180g
                        Carbohydrate intake for the whole day: 170g
@@ -194,6 +198,8 @@ def input_goals():
                        Afterwards 5 minutes cooldown with
                        5 minutes stretching.
 
+                       This is what we suggest you can consume for
+                       the whole day. It is not a must to follow this.
                        Calorie intake for the whole day: 1600 calories
                        Protein intake for the whole day: 200g
                        Carbohydrate intake for the whole day: 150g
@@ -226,11 +232,13 @@ def input_goals():
                        3 times a 8-12 reps of each exercise.
                        Starting with squats, bench press, deadlifts.
                        Try to increase the weight each set. 2 minutes rest
-                       Between each set.Dont forget to stretch the muscle group
-                       you are working on.
+                       Between each set. Dont forget to stretch the muscle
+                       group you are working on.
                        Afterwards military press, bent over rows, pull ups.
                        5 minutes cooldown with 5 minutes stretching.
 
+                       This is what we suggest you can consume for
+                       the whole day. It is not a must to follow this.
                        Calorie intake for the whole day: 2800 calories
                        Protein intake for the whole day: 160g
                        Carbohydrate intake for the whole day: 250g
@@ -275,6 +283,8 @@ def input_goals():
                        Afterwards 5 minutes cooldown with
                        5 minutes stretching.
 
+                       This is what we suggest you can consume for
+                       the whole day. It is not a must to follow this.
                        Calorie intake for the whole day: 3200 calories
                        Protein intake for the whole day: 180g
                        Carbohydrate intake for the whole day: 320g
@@ -304,29 +314,31 @@ def input_goals():
                        Work your way up to 80% of your max weight.
                        Take your time to and get at least 5 sets
                        of warmup sets done before you start.
-                       
+
                        Squats: 6 sets of 2 reps.
                        work with 90% of your max weight.
                        Try to have eat least 6 sets of warmup sets.
                        Focus on your form and technique.
-                       
+
                        After that we will do some dumbbell exercises.
                        Dumbbell bench press: 4 sets of 8 reps.
                        with 70% of your max weight.
-                       
+
                        Followed by dumbbell rows: 4 sets of 8 reps.
                        Try to work with 90% of your max weight.
-                       
+
                        Last but not least we will do some tricep exercises.
                        Heavy tricep pushdowns: 4 sets of 8 reps.
                        Go as heavy as you can. With good form.
-                       
+
                        Some light abs exercises: 4 sets of 20 reps.
                        leg raises, planks, side planks.
                        Try to hold the plank exercise for 30 seconds.
-                       
+
                        End with some stretching exercises for 5 minutes.
 
+                       This is what we suggest you can consume for
+                       the whole day. It is not a must to follow this.
                        Calorie intake for the whole day: 3500 calories
                        Protein intake for the whole day: 200g
                        Carbohydrate intake for the whole day: 350g
@@ -340,7 +352,7 @@ def input_goals():
 
         elif goals == '3':
             print(Style.BRIGHT + Fore.LIGHTYELLOW_EX + '''
-                       You want to maintain your weight-training!''')
+                       You want to maintain your weight with bodyweight!''')
             while True:
                 goal_level = input(i_color + '''
                        Please enter your level:
@@ -354,13 +366,31 @@ def input_goals():
                     print('''
                        Level: Beginner
 
-                       Cardio: 30-40 minutes interval training
-                       5 minutes light running warmup
-                       3 times a 800m interval.
-                       2 minutes rest between each interval.
-                       Afterwards 5 minutes cooldown with
-                       5 minutes stretching.
+                       Bodyweight training: 30-40 minutes bodyweight training.
+                       For the whole body you have to start with
+                       some light stretching exercises.
+                       Take some time to warm up the muscles.
+                       Get 5 minutes of stretching done.
+                       Be sure to stretch the whole body.
 
+                       Important: 2 minutes rest between each set.
+                       For the main exercises:
+
+                       Start with some push ups, pull ups, air squats.
+                       Do 3 sets of 10 reps of each exercise.
+
+                       After that we will do some leg exercises.
+                       Step ups: 3 sets of 10 reps.
+                       Followed by lunges: 3 sets of 10 reps.
+
+                       For the abs we will do some crunches.
+                       3 sets of 20 reps. Followed by some planks.
+                       30 seconds hold for 3 sets.
+
+                       5 minutes cooldown with 5 minutes stretching.
+
+                       This is what we suggest you can consume for
+                       the whole day. It is not a must to follow this.
                        Calorie intake for the whole day: 2200 calories
                        Protein intake for the whole day: 160g
                        Carbohydrate intake for the whole day: 190g
@@ -374,16 +404,41 @@ def input_goals():
                     print('''
                        Level: Intermediate
 
-                       Cardio: 60-70 minutes interval training.
-                       10 minutes light running warmup
-                       3 times a 200m interval.
-                       2 minutes rest between each interval.
-                       Afterwards followed by 2 times 400m interval.
-                       1 minute rest in between.
-                       Followed by 2 times 800m interval. 2 minutes rest.
-                       Afterwards 5 minutes cooldown with
-                       5 minutes stretching.
+                       Bodyweight training: 30-40 minutes bodyweight training.
+                       For the whole body you have to start with
+                       some light stretching exercises.
+                       Take some time to warm up the muscles.
+                       Get 5 minutes of stretching done.
+                       Be sure to stretch the whole body.
 
+                       Important: 2 minutes rest between each set.
+                       For the main exercises:
+
+                       Start with some triangle push ups.
+                       And superset it with some pull ups.
+                       3 sets of 10 reps of each exercise.
+
+                       Walkouts: 3 sets of 10 reps.
+                       And superset it with some air squats.
+
+                       Followed by handstand hold for 30 seconds.
+                       Try to hold it for 3 sets. Stand on your hands
+                       near a wall for support.
+
+                       Close grip pull ups: 3 sets of 10 reps.
+                       Try to hold your hands as close as possible to
+                       each other. For a better workout.
+                       Super set it with some incline push ups.
+                       Get your feet on a chair or bench. To target
+                       the upper chest and shoulders.
+                       3 sets of 10 reps.
+
+                       End with some planks: 30 seconds hold for 3 sets.
+                       2 minutes holds.
+                       After that some hanging leg raises: 3 sets of 10 reps.
+
+                       This is what we suggest you can consume for
+                       the whole day. It is not a must to follow this.
                        Calorie intake for the whole day: 2500 calories
                        Protein intake for the whole day: 180g
                        Carbohydrate intake for the whole day: 220g
@@ -396,14 +451,43 @@ def input_goals():
                        Advanced training program and goals!''')
                     print('''
                        Level: Advanced
+                       Bodyweight training: 30-40 minutes bodyweight training.
+                       For the whole body you have to start with
+                       some light stretching exercises.
+                       Take some time to warm up the muscles.
+                       Get 5 minutes of stretching done.
+                       Be sure to stretch the whole body.
 
-                       Cardio : 60-70 minutes interval training
-                       10 minutes light running warmup
-                       3 times a 400m interval.
-                       2 minutes rest between each interval.
-                       Afterwards followed by 2 times 800m interval.
-                       1 minute rest in between.
-                       Followed by 4 times 200m interval.
+                       Important: 2 minutes rest between each set.
+                       For the main exercises:
+
+                       Start with some muscle ups.
+                       3 sets of 5 reps.
+                       After that some waist to the bar.
+                       3 sets of 8 reps.
+
+                       4 set of 10ms handstand walk.
+                       Followed by 4 sets of 10 reps of inverted push ups.
+                       Get your feet on a chair or bench. For better
+                       control and to target the upper chest and shoulders.
+
+                       Super set it with some normal push ups.
+                       And pull ups: 3 sets of 10 reps.
+                       Se this as a recovery exercise.
+
+                       Get some tricep dips: 3 sets of 10 reps.
+                       Follow it up with some L-sit hold on the ground.
+                       15 seconds hold for 3 sets.
+
+                       Last you will do some hanging leg raises.
+                       4 sets of 10 reps.
+
+                       This is what we suggest you can consume for
+                       the whole day. It is not a must to follow this.
+                       Calorie intake for the whole day: 2700 calories
+                       Protein intake for the whole day: 200g
+                       Carbohydrate intake for the whole day: 240g
+                       Fat intake for the whole day: 100g
                        ''')
                     restart_program()
                 else:
