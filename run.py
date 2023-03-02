@@ -56,8 +56,8 @@ def input_age():
     collect the user age. And return it.
     '''
     while True:
-        age = input('''
-                       Please enter your age:''')
+        age = input(i_color + '''
+                       Please enter your age:''' + reset_all)
         if validate_age(age):
             return int(age)
         else:
@@ -73,13 +73,13 @@ def input_sex():
     Also check if the sex is valid.
     And display error massage.
     '''
-    sex = input('''
-                       Are you a "male" or "female":''')
+    sex = input(i_color + '''
+                       Are you a "male" or "female":''' + reset_all)
     while sex not in ["male", "female"]:
-        print('''
-                       Invalid sex''')
-        sex = input('''
-                       Please enter your sex:''')
+        print(e_color + '''
+                       Invalid sex''' + reset_all)
+        sex = input(i_color + '''
+                       Please enter your sex:''' + reset_all)
     return sex
 
 # Input height
