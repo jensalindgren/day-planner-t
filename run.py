@@ -208,7 +208,7 @@ def input_goals():
                        You want to gain weight-training!''')
             while True:
                 goal_level = input(i_color + '''
-                       Please enter your goal level:
+                       Please enter your level:
                        1. Beginner
                        2. Intermediate
                        3. Advanced
@@ -217,7 +217,7 @@ def input_goals():
                     print(Style.BRIGHT + Fore.LIGHTYELLOW_EX + '''
                        Beginner training program and goals!''')
                     print('''
-                       Goal: Beginner
+                       Level: Beginner
 
                        Cardio: 30-40 minutes interval training
                        5 minutes light running warmup
@@ -237,7 +237,7 @@ def input_goals():
                     print(Style.BRIGHT + Fore.LIGHTYELLOW_EX + '''
                        Intermediate training program and goals!''')
                     print('''
-                       Goal: Intermediate
+                       Level: Intermediate
 
                        Cardio: 60-70 minutes interval training
                        10 minutes light running warmup
@@ -260,7 +260,7 @@ def input_goals():
                     print(Style.BRIGHT + Fore.LIGHTYELLOW_EX + '''
                        Advanced training program and goals!''')
                     print('''
-                       Goal: Advanced
+                       Level: Advanced
 
                        Cardio: 60-70 minutes interval training
                        10 minutes light running warmup
@@ -284,7 +284,7 @@ def input_goals():
                        You want to maintain your weight-training!''')
             while True:
                 goal_level = input(i_color + '''
-                       Please enter your goal level:
+                       Please enter your level:
                        1. Beginner
                        2. Intermediate
                        3. Advanced
@@ -293,7 +293,7 @@ def input_goals():
                     print(Style.BRIGHT + Fore.LIGHTYELLOW_EX + '''
                        Beginner training program and goals!''')
                     print('''
-                       Goal: Beginner
+                       Level: Beginner
 
                        Cardio: 30-40 minutes interval training
                        5 minutes light running warmup
@@ -313,7 +313,7 @@ def input_goals():
                     print(Style.BRIGHT + Fore.LIGHTYELLOW_EX + '''
                        Intermediate training program and goals!''')
                     print('''
-                       Goal: Intermediate
+                       Level: Intermediate
 
                        Cardio: 60-70 minutes interval training.
                        10 minutes light running warmup
@@ -336,7 +336,7 @@ def input_goals():
                     print(Style.BRIGHT + Fore.LIGHTYELLOW_EX + '''
                        Advanced training program and goals!''')
                     print('''
-                       Goal: Advanced
+                       Level: Advanced
 
                        Cardio : 60-70 minutes interval training
                        10 minutes light running warmup
