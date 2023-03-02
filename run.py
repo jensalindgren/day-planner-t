@@ -1,11 +1,14 @@
 # Colorama is used to color the text in the terminal
 from colorama import Fore, Back, Style
 
-# Color tags
-i_color = Fore.LIGHTGREEN_EX        # Input color
-e_color = Back.RED                  # Error color
-d_color = Fore.LIGHTYELLOW_EX       # Data color
-reset_all = Style.RESET_ALL         # Reset to normal
+# Input color
+i_color = Fore.LIGHTGREEN_EX
+# Error color
+e_color = Back.RED
+# Info Color
+d_color = Fore.LIGHTYELLOW_EX
+# Reset to normal
+reset_all = Style.RESET_ALL
 
 # Output welcome message
 
@@ -38,8 +41,8 @@ def input_name():
     Collect the user name. And return it.
     '''
     while True:
-        name = input(Style.RESET_ALL + '''
-                       Enter your name in letters:''')
+        name = input(+ i_color + '''
+                       Enter your name in letters:''' + reset_all)
         if validate_name(name):
             return name
         else:
