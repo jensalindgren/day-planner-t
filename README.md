@@ -15,6 +15,7 @@ Here is the link to the deployed application: [Day Planner](https://day-planner.
   - [Table of Contents](#table-of-contents)
   - [Project Goals](#project-goals)
   - [User Stories](#user-stories)
+  - [Color Scheme](#color-scheme)
   - [Wireframes](#wireframes)
     - [Flowchart](#flowchart)
   - [General Features](#general-features)
@@ -45,9 +46,23 @@ Here is the link to the deployed application: [Day Planner](https://day-planner.
 - As a user, I want to be able to see a list of exercises and their descriptions.
 - As a user I want to be able to understand the instructions on how to perform the exercises.
 
+## Color Scheme
+
+Colorama was used to generate the color scheme. And make the terminal colorful.
+In the terminal run: pip3 install colorama
+
+- All the instructions are in green.
+- All the user's input is in white.
+- All the application's output is in yellow.
+- All the errors are in red.
+- Welcome message is in blue.
+- And goodbye message is in yellow.
+
 ## Wireframes
 
 ### Flowchart
+
+Flowchart was created in lucidchart.com
 ![Alt text](/assets/images/planner.png?raw=true "Flowchart")
 ## General Features
 
