@@ -2,6 +2,8 @@
 
 ## General Info
 
+This is a simple day planner application that allows users to choose a training goal and choose the level of difficulty. The application will then generate a workout plan for the user. It will also give the user guidance on how to perform the exercises and how many reps and sets to do. The application will also give the user a nutrition plan based on their goal and level of difficulty.
+
 ## Table of Contents
 
 - [Day Planner](#day-planner)
@@ -24,7 +26,22 @@
 
 ## Project Goals
 
+- Create a simple day planner application that allows users to choose a training goal and choose the level of difficulty.
+- The application will then generate a workout plan for the user.
+- It will also give the user guidance on how to perform the exercises and how many reps and sets to do.
+- The application will also give the user a nutrition plan based on their goal and level of difficulty.
+- The application will allow individual users input.
+
 ## User Stories
+
+- As a user, I want to be able to understand the purpose of the application.
+- As a user you want to get a new workout plan every time you choose a new goal and level of difficulty.
+- As a user, I want to be able to choose a training goal.
+- As a user, I want to be able to choose the level of difficulty.
+- As a user, I want to be able to see a workout plan based on my goal and level of difficulty.
+- As a user, I want to be able to see a nutrition plan based on my goal and level of difficulty.
+- As a user, I want to be able to see a list of exercises and their descriptions.
+- As a user I want to be able to understand the instructions on how to perform the exercises.
 
 ## Wireframes
 
@@ -32,6 +49,12 @@
 ![Alt text](/assets/images/planner.png?raw=true "Flowchart")
 ## General Features
 
+- The application is easy to use and navigate.
+- The application has instructions on how to use it.
+- The application has a list of exercises and their descriptions.
+- The application has a workout plan based on the user's goal and level of difficulty.
+- The application has a nutrition plan based on the user's goal and level of difficulty.
+- The application has validation for all the user's input.
 ### Index Page
 
 ## Testing

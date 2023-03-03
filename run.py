@@ -153,7 +153,7 @@ def input_goals():
                        Protein intake for the whole day: 160g
                        Carbohydrate intake for the whole day: 190g
                        Fat intake for the whole day: 80g
-                       
+
                        Scroll up to see the whole program.
                        ''')
                     restart_program()
@@ -181,7 +181,7 @@ def input_goals():
                        Protein intake for the whole day: 180g
                        Carbohydrate intake for the whole day: 170g
                        Fat intake for the whole day: 60g
-                       
+
                        Scroll up to see the whole program.
                        ''')
                     restart_program()
@@ -208,7 +208,7 @@ def input_goals():
                        Protein intake for the whole day: 200g
                        Carbohydrate intake for the whole day: 150g
                        Fat intake for the whole day: 40g
-                       
+
                        Scroll up to see the whole program.
                         ''')
                     restart_program()
@@ -249,7 +249,7 @@ def input_goals():
                        Protein intake for the whole day: 160g
                        Carbohydrate intake for the whole day: 250g
                        Fat intake for the whole day: 80g
-                       
+
                        Scroll up to see the whole program.
                        ''')
                     restart_program()
@@ -297,7 +297,7 @@ def input_goals():
                        Protein intake for the whole day: 180g
                        Carbohydrate intake for the whole day: 320g
                        Fat intake for the whole day: 100g
-                       
+
                        Scroll up to see the whole program.
                        ''')
                     restart_program()
@@ -353,7 +353,7 @@ def input_goals():
                        Protein intake for the whole day: 200g
                        Carbohydrate intake for the whole day: 350g
                        Fat intake for the whole day: 120g
-                       
+
                        Scroll up to see the whole program.
                        ''')
                     restart_program()
@@ -407,7 +407,7 @@ def input_goals():
                        Protein intake for the whole day: 160g
                        Carbohydrate intake for the whole day: 190g
                        Fat intake for the whole day: 80g
-                       
+
                        Scroll up to see the whole program.
                        ''')
                     restart_program()
@@ -457,7 +457,7 @@ def input_goals():
                        Protein intake for the whole day: 180g
                        Carbohydrate intake for the whole day: 220g
                        Fat intake for the whole day: 100g
-                       
+
                        Scroll up to see the whole program.
                        ''')
                     restart_program()
@@ -504,7 +504,7 @@ def input_goals():
                        Protein intake for the whole day: 200g
                        Carbohydrate intake for the whole day: 240g
                        Fat intake for the whole day: 100g
-                       
+
                        Scroll up to see the whole program.
                        ''')
                     restart_program()
