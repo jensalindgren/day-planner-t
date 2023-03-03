@@ -4,6 +4,8 @@
 
 This is a simple day planner application that allows users to choose a training goal and choose the level of difficulty. The application will then generate a workout plan for the user. It will also give the user guidance on how to perform the exercises and how many reps and sets to do. The application will also give the user a nutrition plan based on their goal and level of difficulty.
 
+Here is the link to the deployed application: [Day Planner](https://day-planner.herokuapp.com/)
+
 ## Table of Contents
 
 - [Day Planner](#day-planner)
@@ -14,11 +16,9 @@ This is a simple day planner application that allows users to choose a training 
   - [Wireframes](#wireframes)
     - [Flowchart](#flowchart)
   - [General Features](#general-features)
-    - [Index Page](#index-page)
   - [Testing](#testing)
     - [Code validation](#code-validation)
-  - [Manual Testing](#manual-testing)
-    - [Index](#index)
+    - [Manual Testing](#manual-testing)
   - [Final Result](#final-result)
   - [Deployment](#deployment)
   - [Features Left to Implement](#features-left-to-implement)
@@ -55,18 +55,34 @@ This is a simple day planner application that allows users to choose a training 
 - The application has a workout plan based on the user's goal and level of difficulty.
 - The application has a nutrition plan based on the user's goal and level of difficulty.
 - The application has validation for all the user's input.
-### Index Page
 
 ## Testing
 
 ### Code validation
+- I used https://pep8ci.herokuapp.com/ to validate the code.
 
-## Manual Testing
+![Alt text](/assets/images/pep8.png?raw=true "Pep8")
+### Manual Testing
 
-### Index
+- I tested the application manually to see if all validations works by following these steps:
+
+
 
 ## Final Result
 
+Here is the link to the deployed application: [Day Planner](https://day-planner.herokuapp.com/)
+
+All the the workout plans and nutrition plans are created by myself.
+For the estimation of the calories,carbs,proteins and fats is from my own experience working as a personal trainer and nutritionist.
+
+Screenshots of the application deployed on Heroku:
+
+![Alt text](/assets/images/one.png?raw=true "One")
+![Alt text](/assets/images/two.png?raw=true "Two")
+![Alt text](/assets/images/three.png?raw=true "Three")
+![Alt text](/assets/images/four.png?raw=true "Four")
+
+back to [top](#table-of-contents)
 ## Deployment
 
 The application has been deployed using Heroku by following these steps:
@@ -93,5 +109,21 @@ Here is the link to the deployed application: [Day Planner](https://day-planner.
 
 ## Features Left to Implement
 
+- Add a login system so that users can save their workout plans and nutrition plans.
+- Add a feature that allows users to choose the number of days they want to train.
+- More exercises and nutrition plans.
+- Tailor the workout plan and nutrition plan to the user's inputs.
+- Add more levels of difficulty.
+- More training goals.
+- Better design in comparison to the current design.
+- Macros are calculated based on the user's inputs.
+
 ## Credits
 
+I want to thank my mentor Marcel for his help and support.
+
+I got the inspiration for this project from [Code Institute](https://github.com/josswe26/macro-calculator/tree/f3b008689f1ec2ee69833bbd41f679e36a9dad5e).
+
+Feel free to use the code for your own projects.
+
+[Back to Table of Contents](#table-of-contents)
