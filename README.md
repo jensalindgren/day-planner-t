@@ -4,6 +4,8 @@
 
 This is a simple day planner application that allows users to choose a training goal and choose the level of difficulty. The application will then generate a workout plan for the user. It will also give the user guidance on how to perform the exercises and how many reps and sets to do. The application will also give the user a nutrition plan based on their goal and level of difficulty.
 
+![Alt text](/assets/images/one.png?raw=true "One")
+
 Here is the link to the deployed application: [Day Planner](https://day-planner.herokuapp.com/)
 
 ## Table of Contents
@@ -64,9 +66,29 @@ Here is the link to the deployed application: [Day Planner](https://day-planner.
 ![Alt text](/assets/images/pep8.png?raw=true "Pep8")
 ### Manual Testing
 
+I tested the application functions. And all the validations for the user's input.
+All the different inputs to navigate the application.
+
 - I tested the application manually to see if all validations works by following these steps:
 
-
+![Alt text](/assets/images/validations/vali1.png?raw=true "Validation 1")
+- Valdiation test : Pass
+![Alt text](/assets/images/validations/vali2.png?raw=true "Validation 2")
+- Valdiation test : Pass
+![Alt text](/assets/images/validations/vali3.png?raw=true "Validation 3")
+- Valdiation test : Pass
+![Alt text](/assets/images/validations/vali4.png?raw=true "Validation 4")
+- Valdiation test : Pass
+![Alt text](/assets/images/validations/vali5.png?raw=true "Validation 5")
+- Valdiation test : Pass
+![Alt text](/assets/images/validations/vali6.png?raw=true "Validation 6")
+- Valdiation test : Pass
+![Alt text](/assets/images/validations/vali7.png?raw=true "Validation 7")
+- Valdiation test : Pass
+![Alt text](/assets/images/validations/vali8.png?raw=true "Validation 8")
+- Valdiation test : Pass
+![Alt text](/assets/images/validations/vali9.png?raw=true "Validation 9")
+- Valdiation test : Pass
 
 ## Final Result
 
