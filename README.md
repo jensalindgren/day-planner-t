@@ -66,12 +66,13 @@ Flowchart was created in lucidchart.com
 ![Alt text](/assets/images/planner.png?raw=true "Flowchart")
 ## General Features
 
-- The application is easy to use and navigate.
-- The application has instructions on how to use it.
-- The application has a list of exercises and their descriptions.
-- The application has a workout plan based on the user's goal and level of difficulty.
-- The application has a nutrition plan based on the user's goal and level of difficulty.
-- The application has validation for all the user's input.
+1 The user will input their name, age, sex, height and weight.
+2 The user will choose a training goal.
+2 The user will choose the level of difficulty.
+3 The application will generate a workout plan based on the user's goal and level of difficulty.
+4 The application will generate a nutrition plan based on the user's goal and level of difficulty.
+5 The application has validation for all the user's input.
+6 The application has a instructions section for all what the user needs to know about the application.
 
 ## Testing
 
@@ -146,10 +147,9 @@ Here is the link to the deployed application: [Day Planner](https://day-planner.
 
 ## Features Left to Implement
 
-- Add a login system so that users can save their workout plans and nutrition plans.
 - Add a feature that allows users to choose the number of days they want to train.
 - More exercises and nutrition plans.
-- Tailor the workout plan and nutrition plan to the user's inputs.
+- Tailor more the workout plans and nutrition plans to the user's inputs.
 - Add more levels of difficulty.
 - More training goals.
 - Better design in comparison to the current design.
